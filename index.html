@@ -33,6 +33,14 @@
     <!-- Page Home Mobile Css -->
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>
       Castronaves - Todo material de consumo que sua empresa necessita.
     </title>
@@ -67,12 +75,11 @@
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 Offcanvas
               </h5>
-              <button
-                type="button"
-                class="btn-close"
+              <i
+                class="fa-solid fa-xmark fa-beat fa-2xl"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ></button>
+              ></i>
             </div>
             <div class="offcanvas-body d-md-none">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -110,8 +117,39 @@
               </ul>
             </div>
           </div>
+          <div class="header-action-icons d-none d-md-none d-lg-block">
+            <div class="header-action-icons-login d-inline">
+              <i class="fa-solid fa-user fa-2xl"></i>
+            </div>
+            <div class="header-action-icons-favorites d-inline">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </div>
+            <div class="header-action-icons-cart-shopping d-inline">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
         </div>
       </nav>
+      <div class="header-search d-lg-none">
+        <div class="container">
+          <form action="">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control header-search-input"
+                placeholder="O que você esta procurando?"
+              />
+              <button
+                class="btn btn-outline-secondary header-search-button"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </header>
     <!-- /SubTemplate: Header -->
 
