@@ -1,0 +1,34 @@
+.header {
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  background-color: #fff;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.logotipo {
+  width: 182px;
+  height: 49px;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  color: #b10015;
+}
+
+.icon-bars-mobile {
+  color: #b10015;
+}
+
+@media screen and (min-width: 768px) {
+  .logotipo {
+    width: 225px;
+    height: 61px;
+  }
+}
