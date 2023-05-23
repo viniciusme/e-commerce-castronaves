@@ -1,3 +1,18 @@
+/* =========================================================================
+Template Name: Castro Naves
+Template URL: http://www.castronaves.com
+Description: E-commerce HTML5 Multipurpose Template
+Version: 1.0
+============================================================================ */
+
+/* =============================================================================
+   1. Início das Configurações de style do Arquivo index.html (HOME)
+============================================================================= */
+
+/*=========================================================================== */
+/* Header Área
+============================================================================= */
+
 .header {
   position: absolute;
   width: 100%;
@@ -7,6 +22,9 @@
 
 .navbar {
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logotipo {
@@ -32,11 +50,17 @@
 
 .header-search {
   width: 100%;
+  max-width: 100%;
+  align-items: center;
   margin-top: 10px;
 }
 
+.dropdown {
+  display: none;
+}
+
 .header-search-input {
-  width: 90%;
+  width: 100%;
   max-width: 680px;
   height: 45px;
   background-color: #f5f5f5;
@@ -51,7 +75,23 @@
   color: rgba(121, 121, 121, 0.54);
 }
 
-.header-search-button {
+.dropdow-toggle-search {
+  width: 161px;
+  height: 45px;
+  position: absolute;
+  background-color: #f5f5f5;
+  border: 1px solid #b10015;
+  border-radius: 0px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  color: #4f4f4f;
+}
+
+.header-search-secondary-button {
   width: 66px;
   border: 0;
   background-color: #b10015;
@@ -59,13 +99,215 @@
   color: #fff;
 }
 
+.header-search-secondary-button:hover {
+  background-color: #e60e17;
+}
+
+.header-icons-action {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
+  .header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+  }
+
   .logotipo {
     width: 225px;
     height: 61px;
   }
 
-  .header-action-icons {
-    display: inline-flex;
+  .header-search {
+    max-width: 538px;
+  }
+
+  .dropdown {
+    display: flex;
+    background-color: #f5f5f5;
+    color: #4f4f4f;
+  }
+
+  .dropdow-toggle-search:hover,
+  .dropdow-toggle-search:focus-visible,
+  .dropdow-toggle-search:focus {
+    border: 1px solid #b10015;
+    background-color: #f5f5f5;
+    color: #4f4f4f;
+  }
+
+  .dropdow-toggle-search:active {
+    border: 1px solid #b10015 !important;
+  }
+
+  .dropdown:active {
+    background-color: #f5f5f5;
+    color: #4f4f4f;
+  }
+
+  .header-icons-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-icons-action,
+  a:link {
+    text-decoration: none;
+    color: none;
+  }
+
+  .header-action-icons-login {
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .header-action-icons-login,
+  .fa-user {
+    color: #b10015;
+    font-size: 30px;
+  }
+
+  .fa-user-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: #b10015;
+  }
+
+  .header-action-icons-favorites {
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .header-action-icons-favorites,
+  .fa-heart {
+    color: #b10015;
+    font-size: 30px;
+  }
+
+  .fa-cart-shopping {
+    color: #b10015;
+    font-size: 30px;
+  }
+
+  .fa-heart-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: #b10015;
+  }
+
+  .header-action-icons-cart-shopping {
+    text-align: center;
+  }
+
+  .header-action-icons-cart-shopping,
+  .fa-heart {
+    color: #b10015;
+    font-size: 30px;
+  }
+
+  .fa-cart-shopping-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    color: #b10015;
+  }
+}
+
+/*=========================================================================== */
+/* Nav Área
+============================================================================= */
+
+.nav-menu-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 80px;
+    background: #b10015;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fa-bars {
+    font-size: 18px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .fa-sort-down {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: -9px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fa-universal-access {
+    font-size: 18px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .fa-list-check {
+    font-size: 16px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .fa-opencart {
+    font-size: 16px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .nav-link {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+
+  .nav-link:hover {
+    color: #fff;
   }
 }
