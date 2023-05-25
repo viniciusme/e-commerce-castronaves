@@ -8,6 +8,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Somos uma distribuidora de suprimentos empresariais com o compromisso de abastecer o mercado corporativo, de forma rápida, prática e completa."
+    />
+    <meta name="keywords" content="" />
 
     <!-- Favicon -->
     <link
@@ -30,9 +36,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Page Home Mobile Css -->
-    <link rel="stylesheet" href="./css/style.css" />
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,222 +44,226 @@
       rel="stylesheet"
     />
 
+    <!-- Page Home Mobile Css -->
+    <link rel="stylesheet" href="./css/style-home-new.css" />
+
     <title>
       Castronaves - Todo material de consumo que sua empresa necessita.
     </title>
   </head>
-  <body>
-    <!--  Header -->
-    <header class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="header-logotipo">
-            <figure>
-              <img
-                class="logotipo"
-                src="./images//logo/logotipo-mobile.svg"
-                alt="Logotipo da Castro Naves"
-              />
-            </figure>
-          </div>
-          <div class="header-nav d-xxl-none">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <i class="fa-solid fa-bars fa-2xl icon-bars-mobile"></i>
-            </button>
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  Offcanvas
-                </h5>
-                <i
-                  class="fa-solid fa-xmark fa-beat fa-2xl"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></i>
-              </div>
-              <div class="offcanvas-body d-md-none">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+  <body id="Home-page">
+    <div class="page">
+      <!--  Header -->
+      <header class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="header-logotipo">
+              <figure>
+                <img
+                  class="logotipo"
+                  src="./images/logo/logotipo-mobile.svg"
+                  alt="Logotipo da Castro Naves"
+                />
+              </figure>
             </div>
-          </div>
-          <div class="header-search">
-            <div class="container">
-              <form action="">
-                <div class="input-group mb-3 justify-content-center">
-                  <input
-                    type="text"
-                    class="form-control header-search-input"
-                    placeholder="O que você esta procurando?"
-                  />
-                  <div class="dropdown">
-                    <button
-                      class="btn dropdown-toggle dropdow-toggle-search"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Todas as Categorias
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <button
-                    class="btn btn-outline-secondary header-search-secondary-button"
-                    type="button"
-                    id="button-addon2"
-                  >
-                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-                  </button>
+            <div class="header-nav d-xxl-none">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars fa-2xl icon-bars-mobile"></i>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Offcanvas
+                  </h5>
+                  <i
+                    class="fa-solid fa-xmark fa-beat fa-2xl"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></i>
                 </div>
-              </form>
-            </div>
-          </div>
-          <div class="header-icons-action d-lg-flex d-md-none">
-            <div class="header-action-icons-login">
-              <a href="">
-                <i class="fa-solid fa-user"></i>
-                <p class="fa-user-title">Faça seu login</p>
-              </a>
-            </div>
-            <div class="header-action-icons-favorites d-inline">
-              <a href="">
-                <i class="fa-regular fa-heart"></i>
-                <p class="fa-heart-title">Favorito</p>
-              </a>
-            </div>
-            <div class="header-action-icons-cart-shopping d-inline">
-              <a href="#">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <p class="fa-cart-shopping-title">Meu Carrinho</p>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- /Header -->
-
-    <!-- Nav -->
-    <div class="nav-menu-desktop">
-      <div class="container">
-        <div class="nav-menu">
-          <div class="nav-menu-offcanvas">
-            <a
-              class="nav-link"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-            >
-              <li class="nav-item">
-                <i class="fa-solid fa-bars"></i>
-                Todas as Categorias
-                <i class="fa-solid fa-sort-down"></i>
-              </li>
-            </a>
-
-            <div
-              class="offcanvas offcanvas-start"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                  Todos os Departamentos
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
+                <div class="offcanvas-body d-md-none">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="offcanvas-body">...</div>
             </div>
-          </div>
 
-          <div class="nav-menu-list">
-            <ul class="nav justify-content-end">
-              <a class="nav-link" href="#">
+            <!-- Header Search -->
+            <div class="header-search">
+              <div class="container">
+                <fieldset class="busca">
+                  <legend>Buscar no site</legend>
+                  <label>Buscar</label>
+                  <select id="ftDept4aceafb578de4c7caf31e06bcc8d45b9">
+                    <option value="">Todo o site</option>
+                    <option value="1000000">Integracao</option>
+                    <option value="3">Moda</option>
+                    <option value="1">Eletrodomésticos</option>
+                  </select>
+                  <input
+                    type="hidden"
+                    id="ftDept1a5435ec46e949d2b905d5e83e28386c"
+                    value=""
+                  />
+                  <input
+                    id="ftBox4aceafb578de4c7caf31e06bcc8d45b9"
+                    class="fulltext-search-box"
+                    type="text"
+                    size="20"
+                    accesskey="b"
+                  />
+                  <input
+                    id="ftBtn4aceafb578de4c7caf31e06bcc8d45b9"
+                    type="button"
+                    value="Buscar"
+                    class="btn-buscar"
+                  />
+                </fieldset>
+              </div>
+            </div>
+            <!-- /Header Search -->
+
+            <div class="header-icons-action d-lg-flex d-md-none">
+              <div class="header-action-icons-login">
+                <a href="">
+                  <i class="fa-solid fa-user"></i>
+                  <p class="fa-user-title">Faça seu login</p>
+                </a>
+              </div>
+              <div class="header-action-icons-favorites d-inline">
+                <a href="">
+                  <i class="fa-regular fa-heart"></i>
+                  <p class="fa-heart-title">Favorito</p>
+                </a>
+              </div>
+              <div class="header-action-icons-cart-shopping d-inline">
+                <a href="#">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p class="fa-cart-shopping-title">Meu Carrinho</p>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- /Header -->
+
+      <!-- Nav -->
+      <div class="nav-menu-desktop">
+        <div class="container">
+          <div class="nav-menu">
+            <div class="nav-menu-offcanvas">
+              <a
+                class="nav-link"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
                 <li class="nav-item">
-                  <i class="fa-solid fa-universal-access"></i>
-                  Acessibilidade
+                  <i class="fa-solid fa-bars"></i>
+                  Todas as Categorias
+                  <i class="fa-solid fa-sort-down"></i>
                 </li>
               </a>
-              <a class="nav-link" href="#">
-                <li class="nav-item">
-                  <i class="fa-solid fa-list-check"></i>
-                  Listas de Compra
-                </li>
-              </a>
-              <a class="nav-link" href="#">
-                <li class="nav-item">
-                  <i class="fa-brands fa-opencart"></i>
-                  Repetir Último Pedido
-                </li>
-              </a>
-            </ul>
+
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                    Todos os Departamentos
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">...</div>
+              </div>
+            </div>
+
+            <div class="nav-menu-list">
+              <ul class="nav justify-content-end">
+                <a class="nav-link" href="#">
+                  <li class="nav-item">
+                    <i class="fa-solid fa-universal-access"></i>
+                    Acessibilidade
+                  </li>
+                </a>
+                <a class="nav-link" href="#">
+                  <li class="nav-item">
+                    <i class="fa-solid fa-list-check"></i>
+                    Listas de Compra
+                  </li>
+                </a>
+                <a class="nav-link" href="#">
+                  <li class="nav-item">
+                    <i class="fa-brands fa-opencart"></i>
+                    Repetir Último Pedido
+                  </li>
+                </a>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <!-- /Nav -->
+
+      <!-- Slider Carousel -->
+
+      <!-- /Slider Carousel -->
     </div>
-    <!-- /Nav -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
