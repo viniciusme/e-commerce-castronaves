@@ -254,12 +254,12 @@ Version: 1.0
 
 .nav-menu-desktop {
   display: none;
-  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .nav-menu-desktop {
-    display: none;
+    display: flex;
+    margin-top: 10px;
   }
 
   .nav-menu {
