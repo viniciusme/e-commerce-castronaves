@@ -59,11 +59,13 @@
           <nav class="navbar navbar-expand-lg">
             <div class="header-logotipo">
               <figure>
-                <img
-                  class="logotipo"
-                  src="./images/logo/logotipo-mobile.svg"
-                  alt="Logotipo da Castro Naves"
-                />
+                <a href="https://www.castronaves.com/">
+                  <img
+                    class="logotipo"
+                    src="./images/logo/logotipo-mobile.svg"
+                    alt="Logotipo da Castro Naves"
+                  />
+                </a>
               </figure>
             </div>
             <div class="header-nav d-md-none">
@@ -136,6 +138,7 @@
             <!-- Header Search -->
             <div class="header-search">
               <div class="container">
+                <!-- <vtex.cmc:fullTextSearchBox /> -->
                 <fieldset class="busca">
                   <legend>Buscar no site</legend>
                   <label>Buscar</label>
@@ -202,8 +205,8 @@
                 class="nav-link"
                 type="button"
                 data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
               >
                 <li class="nav-item">
                   <i class="fa-solid fa-bars"></i>
@@ -214,22 +217,133 @@
 
               <div
                 class="offcanvas offcanvas-start"
+                data-bs-scroll="true"
+                data-bs-backdrop="false"
                 tabindex="-1"
-                id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel"
+                id="offcanvasScrolling"
+                aria-labelledby="offcanvasScrollingLabel"
               >
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                    Todos os Departamentos
+                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                    Todas as Categorias
                   </h5>
                   <button
                     type="button"
-                    class="btn-close"
+                    class="btn-close btn-close-offcanvas-menu"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="offcanvas-body">...</div>
+                <div class="offcanvas-body">
+                  <!-- Menu List One -->
+                  <ul class="offcanvas-body-menu">
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('foodAndDisposables')"
+                      onmouseout="hideDiv('foodAndDisposables')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">
+                        Alimentos e Descartáveis
+                      </li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('wasteCollection')"
+                      onmouseout="hideDiv('wasteCollection')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">
+                        Coleta de Resíduos
+                      </li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('epiAndSignaling')"
+                      onmouseout="hideDiv('epiAndSignaling')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">
+                        EPI e Sinalização
+                      </li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('officeAndStationery')"
+                      onmouseout="hideDiv('officeAndStationery')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">
+                        Escritório e Papelaria
+                      </li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('sanitaryHygiene')"
+                      onmouseout="hideDiv('sanitaryHygiene')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">
+                        Higiene Sanitária
+                      </li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('itAndTelephony')"
+                      onmouseout="hideDiv('itAndTelephony')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">
+                        Informática e Telefonia
+                      </li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('cleaning')"
+                      onmouseout="hideDiv('cleaning')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">Limpeza</li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('maintenance')"
+                      onmouseout="hideDiv('maintenance')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">Manutenção</li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('organization')"
+                      onmouseout="hideDiv('organization')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">Organização</li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('eletronicSecurity')"
+                      onmouseout="hideDiv('eletronicSecurity')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">
+                        Segurança Eletrônica
+                      </li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div
+                      class="offcanvas-body-menu-list"
+                      onmouseover="ShowDiv('housewares')"
+                      onmouseout="hideDiv('housewares')"
+                    >
+                      <li class="offcanvas-body-menu-list-item">
+                        Utilidades Domésticas
+                      </li>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </ul>
+                  <!-- /Menu List One -->
+                </div>
               </div>
             </div>
 
@@ -258,6 +372,110 @@
           </div>
         </div>
       </div>
+
+      <!-- Nav-Menu-Offcanvas-Two Hidden -->
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="foodAndDisposables"
+        onmouseover="ShowDiv('foodAndDisposables')"
+        onmouseout="hideDiv('foodAndDisposables')"
+      >
+        <p>Alimentos e Descartáveis</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="wasteCollection"
+        onmouseover="ShowDiv('wasteCollection')"
+        onmouseout="hideDiv('wasteCollection')"
+      >
+        <p>Coleta de Resíduos</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="epiAndSignaling"
+        onmouseover="ShowDiv('epiAndSignaling')"
+        onmouseout="hideDiv('epiAndSignaling')"
+      >
+        <p>EPI e Sinalização</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="officeAndStationery"
+        onmouseover="ShowDiv('officeAndStationery')"
+        onmouseout="hideDiv('officeAndStationery')"
+      >
+        <p>Escritório e Papelaria</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="sanitaryHygiene"
+        onmouseover="ShowDiv('sanitaryHygiene')"
+        onmouseout="hideDiv('sanitaryHygiene')"
+      >
+        <p>Higiene Sanitária</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="itAndTelephony"
+        onmouseover="ShowDiv('itAndTelephony')"
+        onmouseout="hideDiv('itAndTelephony')"
+      >
+        <p>Informática e Telefonia</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="cleaning"
+        onmouseover="ShowDiv('cleaning')"
+        onmouseout="hideDiv('cleaning')"
+      >
+        <p>Limpeza</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="maintenance"
+        onmouseover="ShowDiv('maintenance')"
+        onmouseout="hideDiv('maintenance')"
+      >
+        <p>Manutenção</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="organization"
+        onmouseover="ShowDiv('organization')"
+        onmouseout="hideDiv('organization')"
+      >
+        <p>Organização</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="eletronicSecurity"
+        onmouseover="ShowDiv('eletronicSecurity')"
+        onmouseout="hideDiv('eletronicSecurity')"
+      >
+        <p>Segurança Eletrônica</p>
+      </div>
+
+      <div
+        class="nav-menu-offcanvas-two"
+        id="housewares"
+        onmouseover="ShowDiv('housewares')"
+        onmouseout="hideDiv('housewares')"
+      >
+        <p>Utilidades Domésticas</p>
+      </div>
+
+      <!-- /Nav-Menu-Offcanvas-Two Hidden -->
+
       <!-- /Nav -->
 
       <!-- Slider Carousel -->
@@ -271,5 +489,8 @@
 
     <!-- Font-Awesome JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <!-- Javascript Nav-Menu-Offcanvas -->
+    <script src="./js//nav-menu-offcanvas.js"></script>
   </body>
 </html>
