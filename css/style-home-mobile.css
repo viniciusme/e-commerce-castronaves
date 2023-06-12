@@ -1,7 +1,8 @@
 /* =========================================================================
 Template Name: Castro Naves
 Template URL: http://www.castronaves.com
-Description: E-commerce HTML5 Multipurpose Template
+Description: E-commerce HTML5 Template
+Author: Vinicius Mendes
 Version: 1.0
 ============================================================================ */
 
@@ -413,18 +414,136 @@ Version: 1.0
     }
   }
 
+  .nav-menu-offcanvas-two-accordion {
+    width: 100%;
+  }
+
+  .accordion-button {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 20px 10px 15px;
+    transition: 0.5s all ease-in-out;
+    font-size: 13px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    color: #6d7077;
+    line-height: 20px;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #b10015;
+    transition: background-color 2s ease;
+    color: #fff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .accordion-button:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-button:not(.collapsed) > .fa-chevron-up {
+    display: none;
+  }
+
+  .accordion-button:is(.collapsed) > .fa-chevron-down {
+    display: none;
+  }
+
+  .nav-menu-offcanvas-two-accordion-title-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px 5px 8px;
+  }
+
+  .nav-menu-offcanvas-two-accordion-title {
+    color: #b10015;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .nav-menu-offcanvas-two-accordion-paragraph {
+    color: #4f4f4f;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 15px 0px 0px 0px;
+    text-decoration: underline;
+  }
+
+  .accordion-body {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .accordion-body-submenu {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .accordion-body-submenu-items {
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+    font-size: 13px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    color: #6d7077;
+    cursor: pointer;
+    border-bottom: 1px solid #f2f5f6;
+    padding: 10px 0px 10px 15px;
+  }
+
+  .accordion-body-submenu-items:hover {
+    background-color: #f2f5f6;
+  }
+
+  .accordion-body-submenu-items-all {
+    padding: 0px 0px 0px 15px;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.5s all ease-in-out;
+    font-size: 13px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    color: #b10015;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
   .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .fa-universal-access {
-    font-size: 18px;
-    margin-right: 5px;
-    justify-content: center;
-    align-items: center;
+  .nav-item-acessibilidade {
+    background-color: rgb(0, 48, 135) !important;
+    border-radius: 50%;
     color: #fff;
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
   }
 
   .fa-list-check {
