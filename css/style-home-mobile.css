@@ -312,10 +312,18 @@ Version: 1.0
   display: none;
 }
 
+.sub-categorys {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .nav-menu-desktop {
     display: flex;
     margin-top: 10px;
+  }
+
+  .sub-categorys {
+    display: flex;
   }
 
   .nav-menu {
