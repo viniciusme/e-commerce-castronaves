@@ -624,17 +624,12 @@ Version: 1.0
 ============================================================================= */
 
 .fullbanner {
-  width: 100%;
   padding: 130px 0px 0px 0px;
   z-index: -1;
 }
 
 .bannerDesktop {
   display: none !important;
-}
-
-.bannerMobile {
-  width: 100%;
 }
 
 .owl-controls .owl-pagination {
@@ -716,9 +711,8 @@ Version: 1.0
   background-position: -32px 50%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .fullbanner {
-    width: 100%;
     padding: 140px 0px 0px 0px;
     z-index: -1;
   }
