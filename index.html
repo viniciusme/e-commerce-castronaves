@@ -46,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!-- Page Home Mobile Css -->
-    <link rel="stylesheet" href="./css/style-home-mobile-v1.css" />
+    <link rel="stylesheet" href="./css/style-home-mobile-v2.css" />
 
     <link
       href="https://www.castronaves.com/arquivos/castronaves--main.css"
@@ -203,16 +203,30 @@
                   <p class="fa-heart-title">Favorito</p>
                 </a>
               </div>
+
+              <!-- Carrinho de Compra -->
+
               <div class="header-action-icons-cart-shopping d-inline">
-                <a href="#">
+                <a
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <span class="badge bg-danger mini-cart-qty-admake hidden-xs"
+                    >10</span
+                  >
                   <i class="fa-solid fa-cart-shopping"></i>
                   <p class="fa-cart-shopping-title">Meu Carrinho</p>
                 </a>
               </div>
+
+              <!-- Carrinho de Compra -->
             </div>
           </nav>
         </div>
       </header>
+
       <!-- /Header -->
 
       <!-- Nav -->
@@ -544,6 +558,34 @@
 
       <!-- /Slider Carousel -->
     </div>
+
+    <!-- Offcanvas Carrinho -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+          Offcanvas right
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Olá Teste 123, carrinho de compras...</p>
+        <vtex.cmc:miniCart />
+        <vtex.cmc:AmountItemsInCart />
+      </div>
+    </div>
+
+    <!-- /Offcanvas Carrinho -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>

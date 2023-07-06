@@ -296,6 +296,19 @@ Version: 1.0
     line-height: 22px;
     color: #b10015;
   }
+
+  .badge {
+    background-color: #b10015 !important;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -624,17 +637,12 @@ Version: 1.0
 ============================================================================= */
 
 .fullbanner {
-  width: 100%;
   padding: 130px 0px 0px 0px;
   z-index: -1;
 }
 
 .bannerDesktop {
   display: none !important;
-}
-
-.bannerMobile {
-  width: 100%;
 }
 
 .owl-controls .owl-pagination {
@@ -716,9 +724,8 @@ Version: 1.0
   background-position: -32px 50%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .fullbanner {
-    width: 100%;
     padding: 140px 0px 0px 0px;
     z-index: -1;
   }
