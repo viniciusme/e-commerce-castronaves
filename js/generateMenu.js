@@ -1307,7 +1307,6 @@ const categorysMenu = document.getElementById("categorys");
 const subCategorysMenu = document.getElementById("sub-categorys");
 
 categorys.forEach(category => {
-  console.log(`Category: ${category.category.title}`);
   const categoryTitle = category.category.title;
   createCategorysMenu(categoryTitle)
 
@@ -1345,7 +1344,6 @@ categorys.forEach(category => {
 
 
   category.category.subcategory.forEach(subcategory => {
-    console.log(`- Subcategory: ${subcategory.title}`);
     const subCategoryTitle = subcategory.title;
 
     const divAccordionItem = document.createElement('div');
@@ -1387,7 +1385,6 @@ categorys.forEach(category => {
 
     let aAccordionBodySubmenuItem;
     subcategory.subcategory.forEach(subsubcategory => {
-      console.log(`  - Subsubcategory: ${subsubcategory}`);
       const subSubCategoryTitle = subsubcategory;
 
       aAccordionBodySubmenuItem = document.createElement('a');
