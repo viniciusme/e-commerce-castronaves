@@ -645,6 +645,66 @@ Version: 1.0
   display: none !important;
 }
 
+.fullbanner .owl-controls .owl-buttons > div {
+  width: 30px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e4e4e4;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-prev {
+  left: 45px;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-next {
+  right: 45px;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-prev .fa:before,
+.fullbanner .owl-controls .owl-buttons > div.owl-next .fa:before {
+  content: '';
+  width: 28px;
+  height: 58px;
+  display: block;
+  background: url('//castronaves.vteximg.com.br/arquivos/slides-setas.png')
+    no-repeat;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-prev .fa:before {
+  background-position: -2px 50%;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-next .fa:before {
+  background-position: -32px 50%;
+}
+
+.fullbanner .owl-controls .owl-pagination .owl-page {
+  border: 1px solid #c00d0d;
+  background-color: #ffffff;
+}
+
+.fullbanner .owl-controls .owl-pagination .owl-page:hover {
+  background-color: #c00d0d;
+  border-color: #ffffff;
+}
+
+.fullbanner .owl-controls .owl-pagination .owl-page.active,
+.fullbanner .owl-controls .owl-pagination .owl-page.active:hover {
+  background-color: #c00d0d;
+}
+
+/** ************************************************************************************ **/
+
+/** *********** OWL CAROUSEL **/
+
+/** ************************************************************************************ **/
+
+.owl-carousel {
+  position: relative;
+  padding: 0;
+}
+
 .owl-controls .owl-pagination {
   position: absolute;
   bottom: 17px;
