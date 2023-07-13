@@ -298,13 +298,14 @@ Version: 1.0
   }
 
   .badge {
+    width: 20px;
+    height: 20px;
     background-color: #b10015 !important;
     border-radius: 50%;
     font-size: 12px;
     position: absolute;
     right: 10px;
     top: 3px;
-    padding: 5px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -637,8 +638,8 @@ Version: 1.0
 ============================================================================= */
 
 .fullbanner {
-  padding: 130px 0px 0px 0px;
   z-index: -1;
+  padding: 130px 0px 0px 0px !important;
 }
 
 .bannerDesktop {
@@ -694,15 +695,15 @@ Version: 1.0
   background-color: #c00d0d;
 }
 
-/** ************************************************************************************ **/
-
-/** *********** OWL CAROUSEL **/
-
-/** ************************************************************************************ **/
+/** OWL CAROUSEL **/
 
 .owl-carousel {
   position: relative;
   padding: 0;
+}
+
+.owl-pagination {
+  display: none;
 }
 
 .owl-controls .owl-pagination {
@@ -771,6 +772,7 @@ Version: 1.0
   content: '';
   width: 28px;
   height: 58px;
+  color: #b10015;
   display: block;
   background: url('//castronaves.vteximg.com.br/arquivos/slides-setas.png')
     no-repeat;
@@ -782,6 +784,30 @@ Version: 1.0
 
 .owl-controls .owl-buttons > div.owl-next .fa:before {
   background-position: -32px 50%;
+}
+
+.owl-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.owl-next,
+svg {
+  color: #b10015;
+}
+
+.owl-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.owl-prev,
+svg {
+  color: #b10015;
 }
 
 @media screen and (min-width: 768px) {
@@ -796,5 +822,43 @@ Version: 1.0
 
   .bannerMobile {
     display: none !important;
+  }
+}
+
+/*=========================================================================== */
+/* Banner Produtos Primary
+============================================================================= */
+
+@media screen and (min-width: 768px) {
+  .banners-products-top {
+    position: relative;
+    top: -250px;
+    margin: auto;
+  }
+
+  .banners-product-img {
+    margin-right: 10px;
+  }
+
+  .banners-product-img-access {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banners-outlet {
+    width: 100%;
+  }
+
+  .banners-outlet-img {
+    width: 93%;
+  }
+
+  .banners-prime {
+    width: 100%;
+  }
+
+  .banners-prime-img {
+    width: 93%;
   }
 }

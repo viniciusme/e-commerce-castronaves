@@ -46,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!-- Page Home Mobile Css -->
-    <link rel="stylesheet" href="./css/style-home-mobile-v3.css" />
+    <link rel="stylesheet" href="./css/style-home-mobile-v7.css" />
 
     <link
       href="https://www.castronaves.com/arquivos/castronaves--main.css"
@@ -213,7 +213,9 @@
                   data-bs-target="#offcanvasRight"
                   aria-controls="offcanvasRight"
                 >
-                  <span class="badge bg-danger mini-cart-qty-admake hidden-xs">0</span>
+                  <span class="badge bg-danger mini-cart-qty-admake hidden-xs"
+                    >0</span
+                  >
                   <i class="fa-solid fa-cart-shopping"></i>
                   <p class="fa-cart-shopping-title">Meu Carrinho</p>
                 </a>
@@ -323,6 +325,34 @@
       <!-- /Nav-Menu-Offcanvas-Two Hidden -->
 
       <!-- /Nav -->
+
+      <!-- Offcanvas Carrinho -->
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            Offcanvas right
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Olá Teste 123, carrinho de compras...</p>
+          <vtex.cmc:miniCart />
+          <vtex.cmc:AmountItemsInCart />
+        </div>
+      </div>
+
+      <!-- /Offcanvas Carrinho -->
 
       <!-- Slider Carousel -->
 
@@ -555,35 +585,52 @@
       </div>
 
       <!-- /Slider Carousel -->
-    </div>
 
-    <!-- Offcanvas Carrinho -->
-
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">
-          Offcanvas right
-        </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
+      <div class="content banners-products-top">
+        <div class="container text-center">
+          <div class="d-flex flex-row">
+            <div class="banners-product-img col-md-3">
+              <img
+                src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-chamex.svg"
+                class="img-fluid"
+              />
+            </div>
+            <div class="banners-product-img col-md-3">
+              <img
+                src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-chamex.svg"
+                class="img-fluid"
+              />
+            </div>
+            <div class="banners-product-img col-md-3">
+              <img
+                src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-epi.svg"
+                class="img-fluid"
+              />
+            </div>
+            <div class="banners-product-img-access">
+              <div class="row banners-outlet">
+                <div class="col">
+                  <img
+                    src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-outlet.svg"
+                    class="img-fluid banners-outlet-img"
+                  />
+                </div>
+              </div>
+              <div class="row banners-prime">
+                <div class="col">
+                  <img
+                    src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-prime.svg"
+                    class="img-fluid banners-prime-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="offcanvas-body">
-        <p>Olá Teste 123, carrinho de compras...</p>
-        <vtex.cmc:miniCart />
-        <vtex.cmc:AmountItemsInCart />
-      </div>
-    </div>
 
-    <!-- /Offcanvas Carrinho -->
+      <!-- Banner Produtos -->
+    </div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
