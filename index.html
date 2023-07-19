@@ -46,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!-- Page Home Mobile Css -->
-    <link rel="stylesheet" href="./css/style-home-mobile-v7.css" />
+    <link rel="stylesheet" href="./css/style-home-mobile-v13.css" />
 
     <link
       href="https://www.castronaves.com/arquivos/castronaves--main.css"
@@ -87,7 +87,7 @@
                 </a>
               </figure>
             </div>
-            <div class="header-nav d-md-none">
+            <div class="header-nav d-lg-none">
               <button
                 class="navbar-toggler"
                 type="button"
@@ -586,41 +586,49 @@
 
       <!-- /Slider Carousel -->
 
-      <div class="content banners-products-top">
+      <!-- Banner Produtos Mobile -->
+
+      <!-- /Banner Produtos Mobile -->
+
+      <!-- Banner Produtos Desktop -->
+
+      <div
+        class="content banners-products-top-desktop d-none d-sm-none d-md-none d-lg-block"
+      >
         <div class="container text-center">
           <div class="d-flex flex-row">
-            <div class="banners-product-img col-md-3">
+            <div class="banners-product col-md-3">
               <img
                 src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-chamex.svg"
-                class="img-fluid"
+                alt="banners-product-img-one"
               />
             </div>
-            <div class="banners-product-img col-md-3">
-              <img
-                src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-chamex.svg"
-                class="img-fluid"
-              />
-            </div>
-            <div class="banners-product-img col-md-3">
+            <div class="banners-product col-md-3">
               <img
                 src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-epi.svg"
-                class="img-fluid"
+                alt="banners-product-img-two"
+              />
+            </div>
+            <div class="banners-product col-md-3">
+              <img
+                src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-escritorio.svg"
+                alt="banners-product-img-three"
               />
             </div>
             <div class="banners-product-img-access">
               <div class="row banners-outlet">
-                <div class="col">
+                <div class="col banner-product-outlet">
                   <img
                     src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-outlet.svg"
-                    class="img-fluid banners-outlet-img"
+                    alt="banners-outlet-img"
                   />
                 </div>
               </div>
               <div class="row banners-prime">
-                <div class="col">
+                <div class="col banner-product-prime">
                   <img
                     src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-prime.svg"
-                    class="img-fluid banners-prime-img"
+                    alt="banners-prime-img"
                   />
                 </div>
               </div>
@@ -629,7 +637,30 @@
         </div>
       </div>
 
-      <!-- Banner Produtos -->
+      <!-- /Banner Produtos Desktop -->
+
+      <!-- Banner Produtos Mobile -->
+
+      <div class="content banners-products-top-mobile d-lg-none">
+        <div class="container text-center">
+          <div class="d-flex flex-row">
+            <div class="banners-product-mobile col">
+              <img
+                src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-outlet.svg"
+                alt="banners-outlet-img"
+              />
+            </div>
+            <div class="banners-product col">
+              <img
+                src="http://192.168.0.108:5500/images/banners/banner-produtos-primary/banner-prime.svg"
+                alt="banners-prime-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /Banner Produtos Mobile -->
     </div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
