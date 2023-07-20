@@ -44,7 +44,7 @@ Version: 1.0
 ============================================================================= */
 
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 130px;
   background-color: #fff;
@@ -343,8 +343,16 @@ Version: 1.0
 
 @media screen and (min-width: 992px) {
   .nav-menu-desktop {
-    display: flex;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 80px;
+    background: #b10015;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
   }
 
   .sub-categorys {
@@ -650,190 +658,42 @@ Version: 1.0
 ============================================================================= */
 
 .fullbanner {
-  z-index: -1;
-  padding: 130px 0px 0px 0px !important;
-}
-
-.bannerDesktop {
-  display: none !important;
-}
-
-.fullbanner .owl-controls .owl-buttons > div {
-  width: 30px;
-  height: 60px;
-  border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #e4e4e4;
-}
-
-.fullbanner .owl-controls .owl-buttons > div.owl-prev {
-  left: 45px;
-}
-
-.fullbanner .owl-controls .owl-buttons > div.owl-next {
-  right: 45px;
-}
-
-.fullbanner .owl-controls .owl-buttons > div.owl-prev .fa:before,
-.fullbanner .owl-controls .owl-buttons > div.owl-next .fa:before {
-  content: '';
-  width: 28px;
-  height: 58px;
-  display: block;
-  background: url('//castronaves.vteximg.com.br/arquivos/slides-setas.png')
-    no-repeat;
-}
-
-.fullbanner .owl-controls .owl-buttons > div.owl-prev .fa:before {
-  background-position: -2px 50%;
-}
-
-.fullbanner .owl-controls .owl-buttons > div.owl-next .fa:before {
-  background-position: -32px 50%;
-}
-
-.fullbanner .owl-controls .owl-pagination .owl-page {
-  border: 1px solid #c00d0d;
-  background-color: #ffffff;
-}
-
-.fullbanner .owl-controls .owl-pagination .owl-page:hover {
-  background-color: #c00d0d;
-  border-color: #ffffff;
-}
-
-.fullbanner .owl-controls .owl-pagination .owl-page.active,
-.fullbanner .owl-controls .owl-pagination .owl-page.active:hover {
-  background-color: #c00d0d;
-}
-
-/** OWL CAROUSEL **/
-
-.owl-carousel {
-  position: relative;
-  padding: 0;
-}
-
-.owl-pagination {
-  display: none;
-}
-
-.owl-controls .owl-pagination {
-  position: absolute;
-  bottom: 17px;
-  text-align: center;
   width: 100%;
-  left: 0;
-  z-index: 10;
-}
-
-.owl-controls .owl-pagination .owl-page {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 2px;
-  border: 1px solid #bebebe;
-  border-radius: 100%;
-  background-color: #ffffff;
-  height: 13px;
-  width: 13px;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-.owl-controls .owl-pagination .owl-page:hover {
-  background-color: #bebebe;
-}
-
-.owl-controls .owl-pagination .owl-page.active,
-.owl-controls .owl-pagination .owl-page.active:hover {
-  background-color: #bebebe;
-}
-
-.owl-controls .owl-buttons {
-  height: 0;
-}
-
-.owl-controls .owl-buttons > div {
-  width: 30px;
-  height: 60px;
-  position: absolute;
-  top: 50%;
-  margin-top: -20px;
-  text-align: center;
-  color: #fff;
-  font-size: 18px;
-  line-height: 20px;
-  border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.owl-controls .owl-buttons > div:hover {
-  opacity: 0.8;
-}
-
-.owl-controls .owl-buttons > div.owl-prev {
-  left: 0;
-}
-
-.owl-controls .owl-buttons > div.owl-next {
-  right: 0;
-}
-
-.owl-controls .owl-buttons > div.owl-prev .fa:before,
-.owl-controls .owl-buttons > div.owl-next .fa:before {
-  content: '';
-  width: 28px;
-  height: 58px;
-  color: #b10015;
-  display: block;
-  background: url('//castronaves.vteximg.com.br/arquivos/slides-setas.png')
-    no-repeat;
-}
-
-.owl-controls .owl-buttons > div.owl-prev .fa:before {
-  background-position: -2px 50%;
-}
-
-.owl-controls .owl-buttons > div.owl-next .fa:before {
-  background-position: -32px 50%;
-}
-
-.owl-next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
-
-.owl-next,
-svg {
-  color: #b10015;
-}
-
-.owl-prev {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
-
-.owl-prev,
-svg {
-  color: #b10015;
+  height: 275px;
+  max-height: 257px;
 }
 
 @media screen and (min-width: 768px) {
   .fullbanner {
-    padding: 140px 0px 0px 0px;
-    z-index: -1;
+    width: 100%;
+    height: 605px;
+    max-height: 605px;
   }
+}
 
-  .bannerDesktop {
-    display: flex !important;
+@media screen and (min-width: 992px) {
+  .fullbanner {
+    width: 100%;
+    height: 605px;
+    max-height: 605px;
+    margin-top: 140px;
   }
+}
 
-  .bannerMobile {
-    display: none !important;
+@media screen and (min-width: 1200px) {
+  .fullbanner {
+    width: 100%;
+    height: 605px;
+    margin-top: 140px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .fullbanner {
+    width: 100%;
+    height: 605px;
+    max-height: 605px;
+    margin-top: 140px;
   }
 }
 
@@ -841,14 +701,58 @@ svg {
 /* Banner Produtos Primary
 ============================================================================= */
 
+.banners-products-top-mobile {
+  position: relative;
+  width: 100%;
+  top: -50px;
+  margin: auto;
+}
+
+.banners-product-mobile {
+  width: 100%;
+  gap: 10px;
+}
+
+.banners-outlet-mobile {
+  width: 170px;
+  border-radius: 0.625rem;
+}
+
+.banners-outlet-mobile img[alt='banners-outlet-img'] {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.625rem;
+}
+
+.banners-prime-mobile {
+  width: 170px;
+  border-radius: 0.625rem;
+}
+
+.banners-prime-mobile img[alt='banners-prime-img'] {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.625rem;
+}
+
 @media screen and (min-width: 768px) {
+  .banners-products-top-mobile {
+    position: relative;
+    width: 100%;
+    top: -50px;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .banners-products-top-desktop {
     position: relative;
     width: 100%;
-    top: -200px;
+    top: -100px;
     margin: auto;
   }
 
@@ -902,7 +806,7 @@ svg {
   .banners-products-top-desktop {
     position: relative;
     width: 100%;
-    top: -200px;
+    top: -100px;
     margin: auto;
   }
 
@@ -955,7 +859,7 @@ svg {
 @media screen and (min-width: 1400px) {
   .banners-products-top-desktop {
     position: relative;
-    top: -250px;
+    top: -100px;
     margin: auto;
   }
 

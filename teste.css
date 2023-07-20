@@ -1,0 +1,187 @@
+.fullbanner {
+  z-index: -1;
+  padding: 130px 0px 0px 0px !important;
+}
+
+.bannerDesktop {
+  display: none !important;
+}
+
+.fullbanner .owl-controls .owl-buttons > div {
+  width: 30px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e4e4e4;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-prev {
+  left: 45px;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-next {
+  right: 45px;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-prev .fa:before,
+.fullbanner .owl-controls .owl-buttons > div.owl-next .fa:before {
+  content: '';
+  width: 28px;
+  height: 58px;
+  display: block;
+  background: url('//castronaves.vteximg.com.br/arquivos/slides-setas.png')
+    no-repeat;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-prev .fa:before {
+  background-position: -2px 50%;
+}
+
+.fullbanner .owl-controls .owl-buttons > div.owl-next .fa:before {
+  background-position: -32px 50%;
+}
+
+.fullbanner .owl-controls .owl-pagination .owl-page {
+  border: 1px solid #c00d0d;
+  background-color: #ffffff;
+}
+
+.fullbanner .owl-controls .owl-pagination .owl-page:hover {
+  background-color: #c00d0d;
+  border-color: #ffffff;
+}
+
+.fullbanner .owl-controls .owl-pagination .owl-page.active,
+.fullbanner .owl-controls .owl-pagination .owl-page.active:hover {
+  background-color: #c00d0d;
+}
+
+/** OWL CAROUSEL **/
+
+.owl-carousel {
+  position: relative;
+  padding: 0;
+}
+
+.owl-pagination {
+  display: none;
+}
+
+.owl-controls .owl-pagination {
+  position: absolute;
+  bottom: 17px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.owl-controls .owl-pagination .owl-page {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+  border: 1px solid #bebebe;
+  border-radius: 100%;
+  background-color: #ffffff;
+  height: 13px;
+  width: 13px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.owl-controls .owl-pagination .owl-page:hover {
+  background-color: #bebebe;
+}
+
+.owl-controls .owl-pagination .owl-page.active,
+.owl-controls .owl-pagination .owl-page.active:hover {
+  background-color: #bebebe;
+}
+
+.owl-controls .owl-buttons {
+  height: 0;
+}
+
+.owl-controls .owl-buttons > div {
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.owl-controls .owl-buttons > div:hover {
+  opacity: 0.8;
+}
+
+.owl-controls .owl-buttons > div.owl-prev {
+  left: 0;
+}
+
+.owl-controls .owl-buttons > div.owl-next {
+  right: 0;
+}
+
+.owl-controls .owl-buttons > div.owl-prev .fa:before,
+.owl-controls .owl-buttons > div.owl-next .fa:before {
+  content: '';
+  width: 28px;
+  height: 58px;
+  color: #b10015;
+  display: block;
+  background: url('//castronaves.vteximg.com.br/arquivos/slides-setas.png')
+    no-repeat;
+}
+
+.owl-controls .owl-buttons > div.owl-prev .fa:before {
+  background-position: -2px 50%;
+}
+
+.owl-controls .owl-buttons > div.owl-next .fa:before {
+  background-position: -32px 50%;
+}
+
+.owl-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.owl-next,
+svg {
+  color: #b10015;
+}
+
+.owl-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.owl-prev,
+svg {
+  color: #b10015;
+}
+
+@media screen and (min-width: 768px) {
+  .fullbanner {
+    padding: 140px 0px 0px 0px;
+    z-index: -1;
+  }
+
+  .bannerDesktop {
+    display: flex !important;
+  }
+
+  .bannerMobile {
+    display: none !important;
+  }
+}
