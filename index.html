@@ -18,7 +18,7 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="https://www.castronaves.com/arquivos/castronaves-favicon.ico"
+      href="https://www.castronaves.com.br/arquivos/castronaves-favicon.ico"
       type="image/x-icon"
     />
 
@@ -36,7 +36,7 @@
 
     <!-- Owl Carousel -->
     <link
-      href="https://www.castronaves.com/arquivos/owl.carousel.css"
+      href="https://www.castronaves.com.br/arquivos/owl.carousel.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -46,10 +46,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!-- Page Home Mobile Css -->
-    <link rel="stylesheet" href="./css/style-home-mobile-v16.css" />
+    <link rel="stylesheet" href="./css/style-home-mobile-v23.css" />
 
     <link
-      href="https://www.castronaves.com/arquivos/castronaves--main.css"
+      href="https://www.castronaves.com.br/arquivos/castronaves--main.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -57,12 +57,12 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://www.castronaves.com/arquivos/0-cns-web-styles.css"
+      href="https://www.castronaves.com.br/arquivos/0-cns-web-styles.css"
     />
 
     <link
       rel="stylesheet"
-      href="https://www.castronaves.com/arquivos/jquery-ui.min.css"
+      href="https://www.castronaves.com.br/arquivos/jquery-ui.min.css"
     />
 
     <title>
@@ -357,43 +357,92 @@
       <!-- Slider Carousel Desktop -->
 
       <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide fullbanner"
+        id="carouselExampleInterval"
+        class="carousel slide fullbannercarousel d-none d-sm-none d-md-none d-lg-block"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="10000">
             <img
-              src="./images/banners/banner-produtos-carousel/banner-01.svg"
-              class="d-block w-100"
-              alt="..."
+              src="./images/banners/banner-produtos-carousel/banner-desktop-01.svg"
+              alt="bannerdesktopcarouselone"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./images/banners/banner-produtos-carousel/banner-desktop-02.svg"
+              alt="bannerdesktopcarouseltwo"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./images/banners/banner-produtos-carousel/banner-02.svg"
-              class="d-block w-100"
-              alt="..."
+              src="./images/banners/banner-produtos-carousel/banner-desktop-03.svg"
+              alt="bannerdesktopcarouselthree"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./images/banners/banner-produtos-carousel/banner-03.svg"
-              class="d-block w-100"
-              alt="..."
+              src="./images/banners/banner-produtos-carousel/banner-desktop-02.svg"
+              alt="bannerdesktopcarouselfour"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <i class="fa-solid fa-chevron-left fa-2xl" aria-hidden="true"></i>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <i class="fa-solid fa-chevron-right fa-2xl" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- /Slider Carousel Desktop -->
+
+      <!-- Slider Carousel Mobile -->
+
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide fullbannercarousel d-lg-none"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="./images/banners/banner-produtos-carousel/banner-mobile-01.svg"
+              alt="bannermobilecarouselone"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./images/banners/banner-produtos-carousel/banner-mobile-01.svg"
+              alt="bannermobilecarouseltwo"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./images/banners/banner-produtos-carousel/banner-03.svg"
-              class="d-block w-100"
-              alt="..."
+              src="./images/banners/banner-produtos-carousel/banner-mobile-01.svg"
+              alt="bannermobilecarouselthree"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/banners/banner-produtos-carousel/banner-mobile-01.svg"
+              alt="bannermobilecarouselfour"
             />
           </div>
         </div>
       </div>
 
-      <!-- /Slider Carousel Desktop -->
+      <!-- /Slider Carousel Mobile -->
 
       <!-- Banner Produtos Desktop -->
 
@@ -465,7 +514,6 @@
           </div>
         </div>
       </div>
-
       <!-- /Banner Produtos Mobile -->
     </div>
 
@@ -479,7 +527,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 
     <!-- JS Personalizados Para a Home New -->
-    <script src="https://www.castronaves.com/arquivos/default.js"></script>
+    <script src="https://www.castronaves.com.br/arquivos/default.js"></script>
 
     <!-- Remover Aguarde... -->
     <script src="./js/removeAguarde.js"></script>
@@ -491,6 +539,6 @@
     <script src="./js/generateMenu.js"></script>
 
     <!-- Configurações OWL Old -->
-    <script src="https://www.castronaves.com/arquivos/owl.carousel.min.js"></script>
+    <script src="https://www.castronaves.com.br/arquivos/owl.carousel.min.js"></script>
   </body>
 </html>

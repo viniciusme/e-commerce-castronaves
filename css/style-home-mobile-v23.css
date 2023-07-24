@@ -657,14 +657,31 @@ Version: 1.0
 /* Slider Carousel
 ============================================================================= */
 
-.fullbanner {
+.fullbannercarousel {
   width: 100%;
   height: 275px;
   max-height: 257px;
 }
 
+.fa-chevron-left,
+.fa-chevron-right {
+  color: #b10015;
+}
+
+.carousel-item img[alt='bannerdesktopcarouselone'],
+.carousel-item img[alt='bannerdesktopcarouseltwo'],
+.carousel-item img[alt='bannerdesktopcarouselthree'],
+.carousel-item img[alt='bannerdesktopcarouselfour'],
+.carousel-item img[alt='bannermobilecarouselone'],
+.carousel-item img[alt='bannermobilecarouseltwo'],
+.carousel-item img[alt='bannermobilecarouselthree'],
+.carousel-item img[alt='bannermobilecarouselfour'] {
+  width: 100%;
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
-  .fullbanner {
+  .fullbannercarousel {
     width: 100%;
     height: 605px;
     max-height: 605px;
@@ -672,28 +689,28 @@ Version: 1.0
 }
 
 @media screen and (min-width: 992px) {
-  .fullbanner {
+  .fullbannercarousel {
     width: 100%;
     height: 605px;
     max-height: 605px;
-    margin-top: 140px;
+    margin-top: 138px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .fullbanner {
+  .fullbannercarousel {
     width: 100%;
     height: 605px;
-    margin-top: 140px;
+    margin-top: 138px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .fullbanner {
+  .fullbannercarousel {
     width: 100%;
     height: 605px;
     max-height: 605px;
-    margin-top: 140px;
+    margin-top: 138px;
   }
 }
 
@@ -739,11 +756,20 @@ Version: 1.0
   border-radius: 0.625rem;
 }
 
+@media screen and (min-width: 576px) {
+  .banners-products-top-mobile {
+    position: relative;
+    width: 100%;
+    top: 100px;
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .banners-products-top-mobile {
     position: relative;
     width: 100%;
-    top: -50px;
+    top: -134px;
     margin: auto;
   }
 }
@@ -752,7 +778,7 @@ Version: 1.0
   .banners-products-top-desktop {
     position: relative;
     width: 100%;
-    top: -100px;
+    top: -400px;
     margin: auto;
   }
 
@@ -806,7 +832,7 @@ Version: 1.0
   .banners-products-top-desktop {
     position: relative;
     width: 100%;
-    top: -100px;
+    top: -350px;
     margin: auto;
   }
 
@@ -859,7 +885,7 @@ Version: 1.0
 @media screen and (min-width: 1400px) {
   .banners-products-top-desktop {
     position: relative;
-    top: -100px;
+    top: -260px;
     margin: auto;
   }
 
