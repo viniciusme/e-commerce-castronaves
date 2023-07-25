@@ -227,19 +227,24 @@ Version: 1.0
 
   .header-icons-action {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+  }
+
+  .fa-user-title,
+  .fa-heart-title,
+  .fa-cart-shopping-title {
+    display: none;
   }
 
   .header-icons-action,
   a:link {
     text-decoration: none;
-    color: none;
+    text-align: center;
   }
 
   .header-action-icons-login {
-    text-align: center;
-    margin-right: 20px;
+    margin-right: 30px;
   }
 
   .header-action-icons-login,
@@ -255,11 +260,11 @@ Version: 1.0
     font-size: 12px;
     line-height: 22px;
     color: #b10015;
+    margin-top: -5px;
   }
 
   .header-action-icons-favorites {
-    text-align: center;
-    margin-right: 20px;
+    margin-right: 30px;
   }
 
   .header-action-icons-favorites,
@@ -280,10 +285,7 @@ Version: 1.0
     font-size: 12px;
     line-height: 22px;
     color: #b10015;
-  }
-
-  .header-action-icons-cart-shopping {
-    text-align: center;
+    margin-top: -5px;
   }
 
   .header-action-icons-cart-shopping,
@@ -299,28 +301,37 @@ Version: 1.0
     font-size: 12px;
     line-height: 22px;
     color: #b10015;
+    margin-top: -5px;
   }
 
   .badge {
+    position: absolute;
     width: 20px;
     height: 20px;
     background-color: #b10015 !important;
     border-radius: 50%;
     font-size: 12px;
     position: absolute;
-    right: 10px;
-    top: 3px;
+    right: -18px;
+    top: 15px;
     align-items: center;
     justify-content: center;
     display: flex;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .fa-user-title,
   .fa-heart-title,
   .fa-cart-shopping-title {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .badge {
+    right: 3px;
+    top: 3px;
   }
 }
 
@@ -695,6 +706,24 @@ Version: 1.0
     max-height: 605px;
     margin-top: 138px;
   }
+
+  .carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin-top: 90px;
+    margin-left: 25px;
+  }
+
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin-top: 90px;
+    margin-right: 25px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -702,6 +731,14 @@ Version: 1.0
     width: 100%;
     height: 605px;
     margin-top: 138px;
+  }
+
+  .carousel-control-prev {
+    margin-top: 120px;
+  }
+
+  .carousel-control-next {
+    margin-top: 120px;
   }
 }
 
@@ -711,6 +748,14 @@ Version: 1.0
     height: 605px;
     max-height: 605px;
     margin-top: 138px;
+  }
+
+  .carousel-control-prev {
+    margin-top: 150px;
+  }
+
+  .carousel-control-next {
+    margin-top: 150px;
   }
 }
 
