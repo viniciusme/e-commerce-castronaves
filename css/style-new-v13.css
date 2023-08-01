@@ -820,19 +820,19 @@ Version: 1.0
 
   .banners-access-primary,
   .banners-access-secondary {
-    width: 250px;
+    width: 220px;
   }
 
   .banners-access-primary img,
   .banners-access-secondary img {
-    width: 77%;
-    max-width: 77%;
+    width: 86%;
+    max-width: 86%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .banners-products-top-desktop {
-    margin-top: -365px;
+    margin-top: -380px;
   }
 
   .banners-product img {
@@ -840,19 +840,69 @@ Version: 1.0
     max-width: 100%;
   }
 
-  .banners-product {
-    margin-right: 50px;
+  .banners-product:not(:last-child) {
+    margin-right: 60px;
   }
 
   .banners-access-primary img,
   .banners-access-secondary img {
-    width: 84%;
-    max-width: 84%;
+    width: 95%;
+    max-width: 95%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .banners-products-top-desktop {
+    margin-top: -360px;
+  }
+
+  .banners-product img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .banners-product:not(:last-child) {
+    margin-right: 70px;
+  }
+
+  .banners-access-primary img,
+  .banners-access-secondary img {
+    width: 95%;
+    max-width: 95%;
   }
 }
 
 @media screen and (min-width: 1400px) {
+  .banners-products-top-desktop {
+    margin-top: -300px;
+  }
+
+  .banners-product img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .banners-product:not(:last-child) {
+    margin-right: 115px;
+  }
+
+  .banners-access-primary img,
+  .banners-access-secondary img {
+    width: 95%;
+    max-width: 95%;
+  }
 }
 
 @media screen and (min-width: 1920px) {
+  .banners-products-top-desktop {
+    margin-top: -240px;
+  }
+
+  .banners-product:not(:last-child) {
+    margin-right: 150px;
+  }
+
+  .banners-product:not(:last-child) {
+    margin-right: 115px;
+  }
 }
