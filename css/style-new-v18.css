@@ -1085,16 +1085,17 @@ Version: 1.0
 .categoria,
 .favoritos,
 .meu-carrinho {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.area-login .fa-user,
+.area-login svg,
 .categoria svg,
-.favoritos .fa-heart,
-.meu-carrinho .fa-cart-shopping {
+.favoritos svg,
+.meu-carrinho svg {
   width: 30px;
   height: 30px;
   color: #fff;
@@ -1119,8 +1120,8 @@ Version: 1.0
   width: 20px;
   height: 20px;
   background-color: #fff !important;
-  right: 110px;
-  top: 15px;
+  right: -10px;
+  top: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1138,8 +1139,8 @@ Version: 1.0
   width: 20px;
   height: 20px;
   background-color: #fff !important;
-  right: 08px;
-  top: 15px;
+  right: -10px;
+  top: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
