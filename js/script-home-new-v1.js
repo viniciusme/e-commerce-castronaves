@@ -5,6 +5,11 @@ setTimeout(function () {
 window.onload = function () {
   removeAttributes('bannersproductstopmobileone');
   removeAttributes('bannersproductstopmobiletwo');
+  removeAttributes('bannersproductstopdesktopone');
+  removeAttributes('bannersproductstopdesktoptwo');
+  removeAttributes('bannersproductstopdesktopthree');
+  removeAttributes('bannersproductstopdesktopfour');
+  removeAttributes('bannersproductstopdesktopfive');
 };
 
 function removeAttributes(attributeName) {
@@ -37,7 +42,19 @@ $(document).ready(function () {
         items: 5,
       },
       900: {
-        items: 6,
+        items: 7,
+      },
+      1200: {
+        items: 8,
+      },
+      1200: {
+        items: 9,
+      },
+      1400: {
+        items: 10,
+      },
+      1500: {
+        items: 11,
       },
     },
   });
