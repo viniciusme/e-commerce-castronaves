@@ -269,7 +269,7 @@ Version: 1.0
     line-height: 1.4rem; /* 186.667% */
   }
 
-  .header-action-icons-favorites .badge {
+  .header-action-icons-favorites .badge-desktop {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -281,9 +281,10 @@ Version: 1.0
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
   }
 
-  .header-action-icons-cart-shopping .badge {
+  .header-action-icons-cart-shopping .badge-desktop {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -295,6 +296,7 @@ Version: 1.0
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
   }
 }
 
@@ -304,7 +306,7 @@ Version: 1.0
     margin-right: 40px;
   }
 
-  .header-action-icons-favorites .badge {
+  .header-action-icons-favorites .badge-desktop {
     right: 75px;
   }
 
@@ -329,7 +331,7 @@ Version: 1.0
     margin-right: 50px;
   }
 
-  .header-action-icons-favorites .badge {
+  .header-action-icons-favorites .badge-desktop {
     right: 85px;
   }
 
@@ -1055,4 +1057,97 @@ Version: 1.0
   .menu-de-categoria-card-img img {
     width: 120px;
   }
+}
+
+/*=========================================================================== */
+/* AppBar Mobile
+============================================================================= */
+
+.appBar-mobile {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  background-color: #b10015;
+  padding: 15px;
+}
+
+.appbar-mobile-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appbar-mobile-menu a {
+  text-decoration: none;
+}
+
+.area-login,
+.categoria,
+.favoritos,
+.meu-carrinho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.area-login .fa-user,
+.categoria svg,
+.favoritos .fa-heart,
+.meu-carrinho .fa-cart-shopping {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.area-login p,
+.categoria p,
+.favoritos p,
+.meu-carrinho p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.4px;
+  text-align: center;
+  color: #fff;
+}
+
+.favoritos .badge-mobile {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff !important;
+  right: 110px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22.4px;
+  color: #b10015;
+}
+
+.meu-carrinho .badge-mobile {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff !important;
+  right: 08px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22.4px;
+  color: #b10015;
 }
