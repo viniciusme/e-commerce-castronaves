@@ -39,6 +39,20 @@ Version: 1.0
   background: #97999c;
 }
 
+#widget-357964 {
+  display: none !important;
+}
+
+#avatarButton {
+  bottom: 75px !important;
+}
+
+@media screen and (min-width: 992px) {
+  #widget-357964 {
+    display: flex;
+  }
+}
+
 /*=========================================================================== */
 /* Header
 ============================================================================= */
@@ -755,7 +769,7 @@ Version: 1.0
 }
 
 /*=========================================================================== */
-/* Banner Produtos Primary
+/* Banner Products Primary
 ============================================================================= */
 
 .banners-products-top-mobile {
@@ -785,6 +799,7 @@ Version: 1.0
   position: relative;
   width: 100%;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .banners-products-top-mobile-two {
@@ -1151,4 +1166,60 @@ Version: 1.0
   font-weight: 700;
   line-height: 22.4px;
   color: #b10015;
+}
+
+/*=========================================================================== */
+/* AppBar Mobile
+============================================================================= */
+
+.offers-outlet {
+  width: 100%;
+  margin-bottom: 106px;
+}
+
+.offers-outlet-title {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.offers-outlet-title h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #b10015;
+}
+
+.offers-outlet-subtitle p {
+  color: #4f4f4f;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.offers-outlet-banners {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+  .offers-outlet-banners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
 }
