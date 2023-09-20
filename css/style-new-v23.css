@@ -153,7 +153,7 @@ Version: 1.0
 /* Component UI Autocompletar Search Vtex */
 
 .ui-autocomplete {
-  position: relative;
+  position: absolute;
   max-width: 330px;
   background-color: #fff;
   padding: 20px;
@@ -161,9 +161,7 @@ Version: 1.0
   left: calc(100vw - 95%);
   top: -8px;
   border-radius: 8px;
-  -webkit-box-shadow: 10px 10px 20px rgba(190, 192, 190, 4.15);
-  -moz-box-shadow: 10px 10px 20px rgba(190, 192, 190, 4.15);
-  box-shadow: 10px 10px 20px rgba(190, 192, 190, 4.15);
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.4);
   list-style-type: none;
   text-decoration: none;
   z-index: 10;
@@ -796,10 +794,13 @@ Version: 1.0
 
 .banners-products-top-mobile-one img,
 .banners-products-top-mobile-two img {
+  display: block;
   position: relative;
   width: 100%;
   max-width: 100%;
+  margin: auto;
   border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .banners-products-top-mobile-two {
@@ -959,15 +960,15 @@ Version: 1.0
 }
 
 /*=========================================================================== */
-/* Menu Categoria
+/* Menu category
 ============================================================================= */
 
-.menu-de-categoria {
+.menu-de-category {
   width: 100%;
   margin-top: 10px;
 }
 
-.menu-de-categoria .item a {
+.menu-de-category .item a {
   text-decoration: none;
 }
 
@@ -977,7 +978,7 @@ Version: 1.0
   align-items: center;
 }
 
-.menu-de-categoria-card {
+.menu-de-category-card {
   width: 150px !important;
   height: 150px;
   display: flex;
@@ -986,7 +987,7 @@ Version: 1.0
   justify-content: center;
 }
 
-.menu-de-categoria-card-img {
+.menu-de-category-card-img {
   width: 115px;
   height: 115px;
   border-radius: 50%;
@@ -997,13 +998,13 @@ Version: 1.0
   justify-content: center;
 }
 
-.menu-de-categoria-card-img img {
+.menu-de-category-card-img img {
   width: 100px;
   height: auto;
   margin-bottom: 25px;
 }
 
-.menu-de-categoria-card-title {
+.menu-de-category-card-title {
   position: relative;
   width: 100%;
   height: 40px;
@@ -1014,7 +1015,7 @@ Version: 1.0
   align-items: center;
 }
 
-.menu-de-categoria-card-title p {
+.menu-de-category-card-title p {
   color: #c00d0d;
   font-family: 'Poppins', sans-serif;
   font-size: 11px;
@@ -1029,7 +1030,7 @@ Version: 1.0
 }
 
 @media screen and (min-width: 992px) {
-  .menu-de-categoria {
+  .menu-de-category {
     margin-top: 0px;
   }
 
@@ -1037,39 +1038,39 @@ Version: 1.0
     padding: 10px 0px 0px 0px;
   }
 
-  .menu-de-categoria-card {
+  .menu-de-category-card {
     width: 200px !important;
     height: 200px !important;
   }
 
-  .menu-de-categoria-card .menu-de-categoria-card-img:hover {
+  .menu-de-category-card .menu-de-category-card-img:hover {
     filter: drop-shadow(-2px -2px 10px #d9d9d9);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .menu-de-categoria {
+  .menu-de-category {
     margin-top: 0px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .menu-de-categoria {
+  .menu-de-category {
     margin-top: 0px;
   }
 
-  .menu-de-categoria-card {
+  .menu-de-category-card {
     width: 150px !important;
     height: 150px;
   }
 
-  .menu-de-categoria-card-img {
+  .menu-de-category-card-img {
     width: 130px;
     height: 130px;
     padding: 15px;
   }
 
-  .menu-de-categoria-card-img img {
+  .menu-de-category-card-img img {
     width: 120px;
   }
 }
@@ -1097,9 +1098,9 @@ Version: 1.0
 }
 
 .area-login,
-.categoria,
-.favoritos,
-.meu-carrinho {
+.category,
+.favorites,
+.my-cart {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1108,9 +1109,9 @@ Version: 1.0
 }
 
 .area-login svg,
-.categoria svg,
-.favoritos svg,
-.meu-carrinho svg {
+.category svg,
+.favorites svg,
+.my-cart svg {
   width: 30px;
   height: 30px;
   color: #fff;
@@ -1118,9 +1119,9 @@ Version: 1.0
 }
 
 .area-login p,
-.categoria p,
-.favoritos p,
-.meu-carrinho p {
+.category p,
+.favorites p,
+.my-cart p {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -1130,7 +1131,7 @@ Version: 1.0
   color: #fff;
 }
 
-.favoritos .badge-mobile {
+.favorites .badge-mobile {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1149,7 +1150,7 @@ Version: 1.0
   color: #b10015;
 }
 
-.meu-carrinho .badge-mobile {
+.my-cart .badge-mobile {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1169,12 +1170,12 @@ Version: 1.0
 }
 
 /*=========================================================================== */
-/* AppBar Mobile
+/* Offers Amd Outlet
 ============================================================================= */
 
 .offers-outlet {
   width: 100%;
-  margin-bottom: 106px;
+  margin-bottom: 30px;
 }
 
 .offers-outlet-title {
@@ -1206,20 +1207,193 @@ Version: 1.0
   display: grid;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
-@media screen and (min-width: 576px) {
+.offers-outlet-banners-one img,
+.offers-outlet-banners-two img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (min-width: 768px) {
   .offers-outlet-banners {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
   }
 }
 
+/*=========================================================================== */
+/* Carousel Products
+============================================================================= */
+
+.showcase-default {
+  width: 100%;
+  height: 300px;
+}
+
+.prateleira h2 {
+  color: #c00d0d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+/*=========================================================================== */
+/* Banner Ads Category
+============================================================================= */
+
+/* IT and Telephony */
+
+.banner-ads-category {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+
+.banner-ads-product-category {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner-ads-category-card-it-phone {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-ads-category-card-it-phone-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-it-phone-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-it-phone-img {
+  width: 302px;
+  height: 242px;
+}
+
+.banner-ads-category-card-it-phone-img img {
+  max-width: 302px;
+  max-height: 242px;
+}
+
+.banner-ads-category-card-it-phone-link {
+  width: 100%;
+}
+
+.banner-ads-category-card-it-phone-link a {
+  color: #4f4f4f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+/* IT and Telephony */
+
+.banner-ads-category-card-eletronic-security {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-ads-category-card-eletronic-security-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-eletronic-security-title {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-eletronic-security-img-one {
+  width: 306px;
+  height: 121px;
+}
+
+.banner-ads-category-card-eletronic-security-img-one img {
+  max-width: 100%;
+  max-height: 121px;
+}
+
+.banner-ads-category-card-eletronic-security-img-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Manutenção */
+
+.banner-ads-category-card-maintenance {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-ads-category-card-maintenance-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-maintenance-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-maintenance-img-one,
+.banner-ads-category-card-maintenance-img-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 @media screen and (min-width: 992px) {
+  .banner-ads-product-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
