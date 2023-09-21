@@ -1273,6 +1273,7 @@ Version: 1.0
   display: grid;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
 .banner-ads-category-card-it-phone-title {
@@ -1323,6 +1324,7 @@ Version: 1.0
   display: grid;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
 .banner-ads-category-card-eletronic-security-title {
@@ -1366,6 +1368,7 @@ Version: 1.0
   display: grid;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
 .banner-ads-category-card-maintenance-title {
@@ -1393,7 +1396,15 @@ Version: 1.0
 @media screen and (min-width: 992px) {
   .banner-ads-product-category {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-ads-product-category {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
