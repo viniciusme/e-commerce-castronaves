@@ -1175,7 +1175,7 @@ Version: 1.0
 
 .offers-outlet {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .offers-outlet-title {
@@ -1228,7 +1228,7 @@ Version: 1.0
 }
 
 /*=========================================================================== */
-/* Carousel Products
+/* Carousel Products Copa e Cozinha
 ============================================================================= */
 
 .showcase-default {
@@ -1255,7 +1255,7 @@ Version: 1.0
 .banner-ads-category {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
 }
 
 .banner-ads-product-category {
@@ -1406,5 +1406,80 @@ Version: 1.0
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+  }
+}
+
+/*=========================================================================== */
+/* Banner Ads Products Partners One
+============================================================================= */
+
+.banner-ads-products-partners-one {
+  position: relative;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-ads-products-partners-one-card {
+  width: 100%;
+  height: auto;
+}
+
+.banner-ads-products-partners-one-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.banner-ads-products-partners-one-card-camera-intelbras {
+  width: 50px;
+  height: auto;
+  margin-top: -38px;
+}
+
+.banner-ads-products-partners-one-card-camera-intelbras img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-ads-products-partners-one-card-camera-intelbras {
+    width: 80px;
+    height: auto;
+    margin-top: -60px;
+  }
+}
+
+/*=========================================================================== */
+/* Carousel Products
+============================================================================= */
+
+.showcase-new-products {
+  width: 100%;
+  height: 300px;
+  margin-top: -60px;
+}
+
+.showcase-new-products .prateleira h2 {
+  color: #c00d0d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .showcase-new-products {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .showcase-new-products {
+    margin-top: -70px;
   }
 }
