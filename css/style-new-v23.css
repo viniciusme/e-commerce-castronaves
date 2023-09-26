@@ -1252,10 +1252,10 @@ Version: 1.0
 
 /* IT and Telephony */
 
-.banner-ads-category {
+.banner-ads-category-it-phone {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .banner-ads-product-category {
@@ -1314,7 +1314,7 @@ Version: 1.0
   text-decoration: none;
 }
 
-/* IT and Telephony */
+/* Eletronic security */
 
 .banner-ads-category-card-eletronic-security {
   width: 327px;
@@ -1332,7 +1332,7 @@ Version: 1.0
   margin-top: 10px;
 }
 
-.banner-ads-category-card-eletronic-security-title {
+.banner-ads-category-card-eletronic-security-title h4 {
   color: #b10015;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -1358,7 +1358,21 @@ Version: 1.0
   gap: 5px;
 }
 
-/* Manutenção */
+.banner-ads-category-card-eletronic-security-img-two-img-one,
+.banner-ads-category-card-eletronic-security-img-two-img-two,
+.banner-ads-category-card-eletronic-security-img-two-img-three {
+  width: 99px;
+  height: 66px;
+}
+
+.banner-ads-category-card-eletronic-security-img-two-img-one img,
+.banner-ads-category-card-eletronic-security-img-two-img-two img,
+.banner-ads-category-card-eletronic-security-img-two-img-three img {
+  max-width: 99px;
+  max-height: 66px;
+}
+
+/* Maintenance */
 
 .banner-ads-category-card-maintenance {
   width: 327px;
@@ -1391,6 +1405,188 @@ Version: 1.0
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.banner-ads-category-card-maintenance-img-one-first,
+.banner-ads-category-card-maintenance-img-one-second,
+.banner-ads-category-card-maintenance-img-one-third,
+.banner-ads-category-card-maintenance-img-one-fourth {
+  width: 142px;
+  height: 90;
+}
+
+.banner-ads-category-card-maintenance-img-one-first img,
+.banner-ads-category-card-maintenance-img-one-second img,
+.banner-ads-category-card-maintenance-img-one-third img,
+.banner-ads-category-card-maintenance-img-one-fourth img {
+  max-width: 142px;
+  max-height: 90;
+}
+
+/* Waste Collection */
+
+.banner-ads-category-waste-collection {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.banner-ads-category-card-waste-collection {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.banner-ads-category-card-waste-collection-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-waste-collection-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-waste-collection-img-one {
+  width: 306px;
+  height: 121px;
+}
+
+.banner-ads-category-card-waste-collection-img-one img {
+  max-width: 100%;
+  max-height: 121px;
+}
+
+.banner-ads-category-card-waste-collection-img-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.banner-ads-category-card-waste-collection-img-two-img-one,
+.banner-ads-category-card-waste-collection-img-two-img-two,
+.banner-ads-category-card-waste-collection-img-two-img-three {
+  width: 99px;
+  height: 66px;
+}
+
+.banner-ads-category-card-waste-collection-img-two-img-one img,
+.banner-ads-category-card-waste-collection-img-two-img-two img,
+.banner-ads-category-card-waste-collection-img-two-img-three img {
+  max-width: 99px;
+  max-height: 66px;
+}
+
+/* Cleaning */
+
+.banner-ads-category-card-cleaning {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.banner-ads-category-card-cleaning-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-cleaning-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-cleaning-img-one,
+.banner-ads-category-card-cleaning-img-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-ads-category-card-cleaning-img-one-first,
+.banner-ads-category-card-cleaning-img-one-second,
+.banner-ads-category-card-cleaning-img-one-third,
+.banner-ads-category-card-cleaning-img-one-fourth {
+  width: 142px;
+  height: 90;
+}
+
+.banner-ads-category-card-cleaning-img-one-first img,
+.banner-ads-category-card-cleaning-img-one-second img,
+.banner-ads-category-card-cleaning-img-one-third img,
+.banner-ads-category-card-cleaning-img-one-fourth img {
+  max-width: 142px;
+  max-height: 90;
+}
+
+/* Sanitary Hygiene */
+
+.banner-ads-category-card-sanitary-hygiene {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.banner-ads-category-card-sanitary-hygiene-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-sanitary-hygiene-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-sanitary-hygiene-img {
+  width: 302px;
+  height: 242px;
+}
+
+.banner-ads-category-card-sanitary-hygiene-img img {
+  max-width: 302px;
+  max-height: 242px;
+}
+
+.banner-ads-category-card-sanitary-hygiene-link {
+  width: 100%;
+}
+
+.banner-ads-category-card-sanitary-hygiene-link a {
+  color: #4f4f4f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -1481,5 +1677,169 @@ Version: 1.0
 @media screen and (min-width: 992px) {
   .showcase-new-products {
     margin-top: -70px;
+  }
+}
+
+/*=========================================================================== */
+/* Banner Ads Products Partners Two
+============================================================================= */
+
+.banner-ads-products-partners-two {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.banner-ads-products-partners-two-cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner-ads-products-partners-two-card {
+  width: 330px;
+  height: auto;
+}
+
+.banner-ads-products-partners-two-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+@media screen and (min-width: 576px) {
+  .banner-ads-products-partners-two-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner-ads-products-partners-two-card {
+    width: 595px;
+    height: auto;
+  }
+}
+
+/*=========================================================================== */
+/* Banner Ads category Card And Banner
+============================================================================= */
+
+.banner-ads-category-card-banner {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.banner-ads-category-card-and-banner {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner-ads-category-card-and-banner-one {
+  width: 325px;
+  height: 173px;
+  flex-shrink: 0;
+}
+
+.banner-ads-category-card-and-banner-one img {
+  max-width: 325px;
+  max-height: 173px;
+  box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
+    10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.banner-ads-category-card-food-and-disposables {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.banner-ads-category-card-food-and-disposables-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-food-and-disposables-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-food-and-disposables-img-one {
+  width: 306px;
+  height: 121px;
+}
+
+.banner-ads-category-card-food-and-disposables-img-one img {
+  max-width: 100%;
+  max-height: 121px;
+}
+
+.banner-ads-category-card-food-and-disposables-img-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.banner-ads-category-card-food-and-disposables-img-two-img-one,
+.banner-ads-category-card-food-and-disposables-img-two-img-two,
+.banner-ads-category-card-food-and-disposables-img-two-img-three {
+  width: 99px;
+  height: 66px;
+}
+
+.banner-ads-category-card-food-and-disposables-img-two-img-one img,
+.banner-ads-category-card-food-and-disposables-img-two-img-two img,
+.banner-ads-category-card-food-and-disposables-img-two-img-three img {
+  max-width: 99px;
+  max-height: 66px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-ads-category-card-and-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .banner-ads-category-card-and-banner-one {
+    width: 620px;
+    height: 334px;
+    flex-shrink: 0;
+  }
+
+  .banner-ads-category-card-and-banner-one img {
+    max-width: 620px;
+    max-height: 334px;
+    box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
+      10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-ads-category-card-and-banner-one {
+    width: 780px;
+    height: 420px;
+    flex-shrink: 0;
+  }
+
+  .banner-ads-category-card-and-banner-one img {
+    max-width: 780px;
+    max-height: 420px;
+    box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
+      10px 10px 20px 0px rgba(0, 0, 0, 0.3);
   }
 }
