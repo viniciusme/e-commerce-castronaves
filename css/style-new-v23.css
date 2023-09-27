@@ -1843,3 +1843,171 @@ Version: 1.0
       10px 10px 20px 0px rgba(0, 0, 0, 0.3);
   }
 }
+
+/*=========================================================================== */
+/* Banner Ads category PPE and Signage
+============================================================================= */
+
+.banner-ads-category-card-ppe-and-signage {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.banner-ads-category-card-ppe-and-signage-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-ppe-and-signage-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-ppe-and-signage-img-one,
+.banner-ads-category-card-ppe-and-signage-img-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-ads-category-card-ppe-and-signage-img-one-first,
+.banner-ads-category-card-ppe-and-signage-img-one-second,
+.banner-ads-category-card-ppe-and-signage-img-one-third,
+.banner-ads-category-card-ppe-and-signage-img-one-fourth {
+  width: 142px;
+  height: 90;
+}
+
+.banner-ads-category-card-ppe-and-signage-img-one-first img,
+.banner-ads-category-card-ppe-and-signage-img-one-second img,
+.banner-ads-category-card-ppe-and-signage-img-one-third img,
+.banner-ads-category-card-ppe-and-signage-img-one-fourth img {
+  max-width: 142px;
+  max-height: 90;
+}
+
+/* Waste Collection */
+
+.banner-ads-category-office-and-stationery {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.banner-ads-category-card-office-and-stationery {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.banner-ads-category-card-office-and-stationery-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-office-and-stationery-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-office-and-stationery-img-one {
+  width: 306px;
+  height: 121px;
+}
+
+.banner-ads-category-card-office-and-stationery-img-one img {
+  max-width: 100%;
+  max-height: 121px;
+}
+
+.banner-ads-category-card-office-and-stationery-img-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.banner-ads-category-card-office-and-stationery-img-two-img-one,
+.banner-ads-category-card-office-and-stationery-img-two-img-two,
+.banner-ads-category-card-office-and-stationery-img-two-img-three {
+  width: 99px;
+  height: 66px;
+}
+
+.banner-ads-category-card-office-and-stationery-img-two-img-one img,
+.banner-ads-category-card-office-and-stationery-img-two-img-two img,
+.banner-ads-category-card-office-and-stationery-img-two-img-three img {
+  max-width: 99px;
+  max-height: 66px;
+}
+
+/* Sanitary Hygiene */
+
+.banner-ads-category-card-organization {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.banner-ads-category-card-organization-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-organization-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-organization-img {
+  width: 302px;
+  height: 242px;
+}
+
+.banner-ads-category-card-organization-img img {
+  max-width: 302px;
+  max-height: 242px;
+}
+
+.banner-ads-category-card-organization-link {
+  width: 100%;
+}
+
+.banner-ads-category-card-organization-link a {
+  color: #4f4f4f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
