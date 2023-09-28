@@ -1086,6 +1086,7 @@ Version: 1.0
   bottom: 0;
   background-color: #b10015;
   padding: 15px;
+  z-index: 10;
 }
 
 .appbar-mobile-menu {
@@ -1215,7 +1216,6 @@ Version: 1.0
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -1255,7 +1255,7 @@ Version: 1.0
 .banner-ads-category-it-phone {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .banner-ads-product-category {
@@ -1589,264 +1589,7 @@ Version: 1.0
   text-decoration: none;
 }
 
-@media screen and (min-width: 992px) {
-  .banner-ads-product-category {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .banner-ads-product-category {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
-
-/*=========================================================================== */
-/* Banner Ads Products Partners One
-============================================================================= */
-
-.banner-ads-products-partners-one {
-  position: relative;
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner-ads-products-partners-one-card {
-  width: 100%;
-  height: auto;
-}
-
-.banner-ads-products-partners-one-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.banner-ads-products-partners-one-card-camera-intelbras {
-  width: 50px;
-  height: auto;
-  margin-top: -38px;
-}
-
-.banner-ads-products-partners-one-card-camera-intelbras img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-@media screen and (min-width: 992px) {
-  .banner-ads-products-partners-one-card-camera-intelbras {
-    width: 80px;
-    height: auto;
-    margin-top: -60px;
-  }
-}
-
-/*=========================================================================== */
-/* Carousel Products
-============================================================================= */
-
-.showcase-new-products {
-  width: 100%;
-  height: 300px;
-  margin-top: -60px;
-}
-
-.showcase-new-products .prateleira h2 {
-  color: #c00d0d;
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
-@media screen and (min-width: 576px) {
-  .showcase-new-products {
-    margin-top: -50px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .showcase-new-products {
-    margin-top: -70px;
-  }
-}
-
-/*=========================================================================== */
-/* Banner Ads Products Partners Two
-============================================================================= */
-
-.banner-ads-products-partners-two {
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-.banner-ads-products-partners-two-cards {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.banner-ads-products-partners-two-card {
-  width: 330px;
-  height: auto;
-}
-
-.banner-ads-products-partners-two-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-
-@media screen and (min-width: 576px) {
-  .banner-ads-products-partners-two-cards {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .banner-ads-products-partners-two-card {
-    width: 595px;
-    height: auto;
-  }
-}
-
-/*=========================================================================== */
-/* Banner Ads category Card And Banner
-============================================================================= */
-
-.banner-ads-category-card-banner {
-  width: 100%;
-  margin-bottom: 100px;
-}
-
-.banner-ads-category-card-and-banner {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.banner-ads-category-card-and-banner-one {
-  width: 325px;
-  height: 173px;
-  flex-shrink: 0;
-}
-
-.banner-ads-category-card-and-banner-one img {
-  max-width: 325px;
-  max-height: 173px;
-  box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
-    10px 10px 20px 0px rgba(0, 0, 0, 0.3);
-}
-
-.banner-ads-category-card-food-and-disposables {
-  width: 327px;
-  height: 362px;
-  background: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-}
-
-.banner-ads-category-card-food-and-disposables-title {
-  text-align: start;
-  margin-top: 10px;
-}
-
-.banner-ads-category-card-food-and-disposables-title h4 {
-  color: #b10015;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.banner-ads-category-card-food-and-disposables-img-one {
-  width: 306px;
-  height: 121px;
-}
-
-.banner-ads-category-card-food-and-disposables-img-one img {
-  max-width: 100%;
-  max-height: 121px;
-}
-
-.banner-ads-category-card-food-and-disposables-img-two {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.banner-ads-category-card-food-and-disposables-img-two-img-one,
-.banner-ads-category-card-food-and-disposables-img-two-img-two,
-.banner-ads-category-card-food-and-disposables-img-two-img-three {
-  width: 99px;
-  height: 66px;
-}
-
-.banner-ads-category-card-food-and-disposables-img-two-img-one img,
-.banner-ads-category-card-food-and-disposables-img-two-img-two img,
-.banner-ads-category-card-food-and-disposables-img-two-img-three img {
-  max-width: 99px;
-  max-height: 66px;
-}
-
-@media screen and (min-width: 992px) {
-  .banner-ads-category-card-and-banner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .banner-ads-category-card-and-banner-one {
-    width: 620px;
-    height: 334px;
-    flex-shrink: 0;
-  }
-
-  .banner-ads-category-card-and-banner-one img {
-    max-width: 620px;
-    max-height: 334px;
-    box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
-      10px 10px 20px 0px rgba(0, 0, 0, 0.3);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .banner-ads-category-card-and-banner-one {
-    width: 780px;
-    height: 420px;
-    flex-shrink: 0;
-  }
-
-  .banner-ads-category-card-and-banner-one img {
-    max-width: 780px;
-    max-height: 420px;
-    box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
-      10px 10px 20px 0px rgba(0, 0, 0, 0.3);
-  }
-}
-
-/*=========================================================================== */
-/* Banner Ads category PPE and Signage
-============================================================================= */
+/* PPE and Signage */
 
 .banner-ads-category-card-ppe-and-signage {
   width: 327px;
@@ -2011,3 +1754,262 @@ Version: 1.0
   line-height: normal;
   text-decoration: none;
 }
+
+@media screen and (min-width: 992px) {
+  .banner-ads-product-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-ads-product-category {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+/*=========================================================================== */
+/* Banner Ads Products Partners One
+============================================================================= */
+
+.banner-ads-products-partners-one {
+  position: relative;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.banner-ads-products-partners-one-card {
+  width: 100%;
+  height: auto;
+}
+
+.banner-ads-products-partners-one-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.banner-ads-products-partners-one-card-camera-intelbras {
+  width: 50px;
+  height: auto;
+  margin-top: -38px;
+}
+
+.banner-ads-products-partners-one-card-camera-intelbras img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-ads-products-partners-one-card-camera-intelbras {
+    width: 80px;
+    height: auto;
+    margin-top: -60px;
+  }
+}
+
+/*=========================================================================== */
+/* Carousel Products
+============================================================================= */
+
+.showcase-new-products {
+  width: 100%;
+  height: 300px;
+  margin-top: -60px;
+}
+
+.showcase-new-products .prateleira h2 {
+  color: #c00d0d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .showcase-new-products {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .showcase-new-products {
+    margin-top: -70px;
+  }
+}
+
+/*=========================================================================== */
+/* Banner Ads Products Partners Two
+============================================================================= */
+
+.banner-ads-products-partners-two {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.banner-ads-products-partners-two-cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner-ads-products-partners-two-card {
+  width: 330px;
+  height: auto;
+}
+
+.banner-ads-products-partners-two-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+@media screen and (min-width: 576px) {
+  .banner-ads-products-partners-two-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner-ads-products-partners-two-card {
+    width: 595px;
+    height: auto;
+  }
+}
+
+/*=========================================================================== */
+/* Banner Ads category Card And Banner
+============================================================================= */
+
+.banner-ads-category-card-banner {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.banner-ads-category-card-and-banner {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner-ads-category-card-and-banner-one {
+  width: 325px;
+  height: 173px;
+  flex-shrink: 0;
+}
+
+.banner-ads-category-card-and-banner-one img {
+  max-width: 325px;
+  max-height: 173px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.banner-ads-category-card-food-and-disposables {
+  width: 327px;
+  height: 362px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.banner-ads-category-card-food-and-disposables-title {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.banner-ads-category-card-food-and-disposables-title h4 {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner-ads-category-card-food-and-disposables-img-one {
+  width: 306px;
+  height: 121px;
+}
+
+.banner-ads-category-card-food-and-disposables-img-one img {
+  max-width: 100%;
+  max-height: 121px;
+}
+
+.banner-ads-category-card-food-and-disposables-img-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.banner-ads-category-card-food-and-disposables-img-two-img-one,
+.banner-ads-category-card-food-and-disposables-img-two-img-two,
+.banner-ads-category-card-food-and-disposables-img-two-img-three {
+  width: 99px;
+  height: 66px;
+}
+
+.banner-ads-category-card-food-and-disposables-img-two-img-one img,
+.banner-ads-category-card-food-and-disposables-img-two-img-two img,
+.banner-ads-category-card-food-and-disposables-img-two-img-three img {
+  max-width: 99px;
+  max-height: 66px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner-ads-category-card-and-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .banner-ads-category-card-and-banner-one {
+    width: 620px;
+    height: 334px;
+    flex-shrink: 0;
+  }
+
+  .banner-ads-category-card-and-banner-one img {
+    max-width: 620px;
+    max-height: 334px;
+    box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
+      10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-ads-category-card-and-banner-one {
+    width: 780px;
+    height: 420px;
+    flex-shrink: 0;
+  }
+
+  .banner-ads-category-card-and-banner-one img {
+    max-width: 780px;
+    max-height: 420px;
+    box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
+      10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/*=========================================================================== */
+/* 
+============================================================================= */
