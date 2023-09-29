@@ -2011,5 +2011,87 @@ Version: 1.0
 }
 
 /*=========================================================================== */
-/* 
+/* Purchasing Differential
 ============================================================================= */
+
+.purchase-difference {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+
+.purchase-difference-cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.purchase-difference-title {
+  text-align: center;
+}
+
+.purchase-difference-title h2 {
+  color: #c00d0d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.purchase-difference-cards-steps {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.purchase-difference-card-step-one img,
+.purchase-difference-card-step-two img,
+.purchase-difference-card-step-three img {
+  width: 110px;
+  height: auto;
+}
+
+.purchase-difference-card-step-four img {
+  width: 80px;
+  height: auto;
+}
+
+.purchase-difference-card-step-one-subtitle,
+.purchase-difference-card-step-two-subtitle,
+.purchase-difference-card-step-three-subtitle,
+.purchase-difference-card-step-four-subtitle {
+  color: #c00d0d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.purchase-difference-card-step-one-paragraph,
+.purchase-difference-card-step-two-paragraph,
+.purchase-difference-card-step-three-paragraph,
+.purchase-difference-card-step-four-paragraph {
+  width: 250px;
+  color: #6d7077;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media screen and (min-width: 992px) {
+  .purchase-difference-cards-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+}
