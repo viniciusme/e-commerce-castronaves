@@ -1428,7 +1428,7 @@ Version: 1.0
 .banner-ads-category-waste-collection {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .banner-ads-category-card-waste-collection {
@@ -1887,6 +1887,39 @@ Version: 1.0
     width: 595px;
     height: auto;
   }
+}
+
+/*=========================================================================== */
+/* Catalog Digital
+============================================================================= */
+
+.section-digital-catalog {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.section-digital-catalog-title h2 {
+  color: #c00d0d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.section-digital-catalog-title p {
+  color: #4f4f4f;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.section-digital-catalog-carousel {
+  width: 100%;
 }
 
 /*=========================================================================== */
