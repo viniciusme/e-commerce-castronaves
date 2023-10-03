@@ -59,3 +59,12 @@ $(document).ready(function () {
     },
   });
 });
+
+//Newsletter
+$(function () {
+  $('input#newsletterButtonOK').val('Cadastrar');
+});
+
+$('.news-form .newsletter').on('DOMSubtreeModified', function () {
+  $('input#newsletterButtonOK').val('Cadastrar');
+});
