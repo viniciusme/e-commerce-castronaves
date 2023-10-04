@@ -1922,6 +1922,78 @@ Version: 1.0
   width: 100%;
 }
 
+.section-digital-catalog-carousel .item {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-digital-catalog-carousel .item img {
+  width: 130px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 130px;
+  box-shadow: -8px 8px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 576px) {
+  .section-digital-catalog-carousel .item img {
+    width: 110px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 110px;
+    box-shadow: -8px 8px 25px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-digital-catalog-carousel .item img {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 120px;
+    box-shadow: -8px 8px 25px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-digital-catalog-carousel .item img {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 120px;
+    box-shadow: none;
+  }
+
+  .section-digital-catalog-carousel .item img:hover {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 120px;
+    box-shadow: -8px 8px 25px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .section-digital-catalog-carousel .item img {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 120px;
+    box-shadow: none;
+  }
+
+  .section-digital-catalog-carousel .item img:hover {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 120px;
+    box-shadow: -8px 8px 25px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
 /*=========================================================================== */
 /* Banner Ads category Card And Banner
 ============================================================================= */

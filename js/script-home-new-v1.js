@@ -26,6 +26,7 @@ $(document).ready(function () {
     stagePadding: 40,
     loop: true,
     margin: 0,
+    padding: 0,
     nav: true,
     dots: false,
     autoplay: true,
