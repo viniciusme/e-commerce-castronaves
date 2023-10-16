@@ -1235,13 +1235,17 @@ Version: 1.0
 /*=========================================================================== */
 /* Carousel Products Copa e Cozinha
 ============================================================================= */
+.showcase-kitchen-pantry {
+  width: 100%;
+  height: auto;
+}
 
 .showcase-default {
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
-.prateleira h2 {
+.showcase-default-title {
   color: #c00d0d;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
@@ -1249,6 +1253,51 @@ Version: 1.0
   font-weight: 700;
   line-height: normal;
   text-align: center;
+}
+
+.showcase-default-subtitle {
+  color: #4f4f4f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.prateleira ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shelf-list-products {
+  width: 100%;
+  height: auto;
+}
+
+.box-product-img {
+  width: 100%;
+  height: auto;
+}
+
+.imagem-secundaria {
+  display: none;
+}
+
+.prateleira .checkout-botton-b2b,
+.prateleira .produtos-marketplace,
+.prateleira .btn-quickview,
+.prateleira .vtrn-marca,
+.prateleira .product-name,
+.prateleira .price,
+.prateleira .leve---por--,
+.prateleira .btn-add-buy-button-asynchronous,
+.prateleira .selo-colecao {
+  display: none;
 }
 
 /*=========================================================================== */
@@ -1259,7 +1308,7 @@ Version: 1.0
 
 .banner-ads-category-it-phone {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
