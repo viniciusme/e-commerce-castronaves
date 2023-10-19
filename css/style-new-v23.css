@@ -24,15 +24,15 @@ Version: 1.0
 
 /* Component Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(231, 161, 161, 0.5);
+  background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b10015;
+  background: #cecece;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -263,7 +263,6 @@ Version: 1.0
   }
 
   .header-icons-action .fa-user,
-  .header-icons-action .fa-heart,
   .header-icons-action .fa-cart-shopping {
     font-size: 30px;
     height: 30px;
@@ -271,7 +270,7 @@ Version: 1.0
   }
 
   .header-icons-action .fa-user-title,
-  .header-icons-action .fa-heart-title,
+  .header-icons-action .ffa-file-pdf-title,
   .header-icons-action .fa-cart-shopping-title {
     color: #b10015;
     font-family: 'Poppins', sans-serif;
@@ -279,21 +278,6 @@ Version: 1.0
     font-style: normal;
     font-weight: 600;
     line-height: 1.4rem; /* 186.667% */
-  }
-
-  .header-action-icons-favorites .badge-desktop {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #b10015 !important;
-    font-size: 12px;
-    font-weight: 400;
-    right: 60px;
-    top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
   }
 
   .header-action-icons-cart-shopping .badge-desktop {
@@ -313,15 +297,6 @@ Version: 1.0
 }
 
 @media screen and (min-width: 1200px) {
-  .header-icons-action .header-action-icons-login,
-  .header-icons-action .header-action-icons-favorites:not(:last-child) {
-    margin-right: 40px;
-  }
-
-  .header-action-icons-favorites .badge-desktop {
-    right: 75px;
-  }
-
   .ui-autocomplete {
     max-width: 700px;
     left: calc(100vw - 80%);
@@ -338,15 +313,6 @@ Version: 1.0
 }
 
 @media screen and (min-width: 1400px) {
-  .header-icons-action .header-action-icons-login,
-  .header-icons-action .header-action-icons-favorites:not(:last-child) {
-    margin-right: 50px;
-  }
-
-  .header-action-icons-favorites .badge-desktop {
-    right: 85px;
-  }
-
   .ui-autocomplete {
     max-width: 700px;
     left: calc(100vw - 75%);
@@ -1238,7 +1204,7 @@ Version: 1.0
 .showcase-kitchen-pantry {
   width: 100%;
   height: auto;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .showcase-default {
@@ -2692,4 +2658,61 @@ Version: 1.0
     gap: 0px;
     margin-top: 50px;
   }
+}
+
+/*=========================================================================== */
+/* Offcanvas Carrinho
+============================================================================= */
+
+.offcanvas-carrinho {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 440px !important;
+  height: 1024px;
+  padding: 30px;
+  gap: 30px;
+  border: 1px solid #b10015;
+  background-color: #f1f1f1;
+}
+
+.offcanvas-carrinho .offcanvas-carrinho-header {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+  background-color: #f1f1f1;
+  border: 0;
+}
+
+.offcanvas-carrinho
+  .offcanvas-carrinho-header
+  .offcanvas-carrinho-header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  border-radius: 130px;
+  border: 1px solid #b10015;
+  padding: 5px 15px 5px 15px;
+}
+
+.offcanvas-carrinho
+  .offcanvas-carrinho-header
+  .offcanvas-carrinho-header-title
+  p {
+  color: #b10015;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.offcanvas-carrinho .offcanvas-carrinho-body {
 }
