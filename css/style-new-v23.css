@@ -3148,3 +3148,81 @@ Version: 1.0
   line-height: normal;
   text-align: center;
 }
+
+/*=========================================================================== */
+/* Slider Carousel
+============================================================================= */
+
+.offcanvas-mobile .offcanvas-header-mobile {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #fff;
+  background-color: #eaeeef;
+}
+
+.offcanvas-mobile .offcanvas-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 8px 5px 17px;
+  border-bottom: 1px solid #f2f5f6;
+}
+
+.offcanvas-mobile .accordion-item {
+}
+
+.offcanvas-mobile .accordion-button-mobile:not(.collapsed) {
+  background-color: #b10015;
+  transition: background-color 2s ease;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.offcanvas-mobile .accordion-collapse .accordion-body {
+  padding: 0;
+  margin: 0;
+}
+
+.offcanvas-mobile .accordion-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.offcanvas-mobile .accordion-body .accordion-body-submenu a {
+  text-decoration: none;
+}
+
+.offcanvas-mobile .accordion-body-submenu-items {
+  width: 100%;
+  height: 40px;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.5s all ease-in-out;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #6d7077;
+  cursor: pointer;
+  border-bottom: 1px solid #f2f5f6;
+  padding: 10px 0px 10px 15px;
+}
+
+.offcanvas-mobile .accordion-body-submenu-items-all {
+  padding: 20px 0px 0px 15px;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.5s all ease-in-out;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #b10015;
+  cursor: pointer;
+  text-decoration: underline;
+}

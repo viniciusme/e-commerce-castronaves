@@ -14,7 +14,7 @@ async function updateNumberBadgeCart() {
   const xhr = new XMLHttpRequest();
   const getUrl = window.location.host;
   const url = `/api/checkout/pub/orderForm?refreshOutdatedData=true`;
-  const badgeElement = document.querySelector('.mini-cart-qty-admake');
+  const badgeElement = document.querySelectorAll('.mini-cart-qty-admake');
 
   xhr.open('GET', url, true);
   xhr.onreadystatechange = function () {
