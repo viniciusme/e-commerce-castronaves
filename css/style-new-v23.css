@@ -2671,7 +2671,7 @@ Version: 1.0
   align-items: flex-end;
   width: 440px !important;
   height: 100vh;
-  padding: 30px;
+  padding: 10px;
   gap: 30px;
   background-color: #f1f1f1;
 }
@@ -2731,12 +2731,21 @@ Version: 1.0
   .offcanvas-carrinho-body
   .cart__container
   .cart
+  .cart__wrapper {
+  padding: 10px;
+}
+
+.offcanvas-carrinho
+  .offcanvas-carrinho-body
+  .cart__container
+  .cart
   .cart__wrapper
   .cart__product-list {
   bottom: 165px;
   width: 100%;
-  height: calc(100vh - 330px);
-  overflow: auto;
+  height: calc(100vh - 400px);
+  max-height: 400px; /* Define a altura máxima de rolagem */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo excede a altura máxima */
   -webkit-box-flex: 1;
   flex-grow: 1;
   margin: 0;
@@ -2907,6 +2916,10 @@ Version: 1.0
   .cart
   .cart__wrapper
   .cart__footer {
+  position: sticky;
+  bottom: 0; /* Fixa o rodapé na parte inferior */
+  background-color: #f1f1f1; /* Define uma cor de fundo para o rodapé, se necessário */
+  padding: 10px; /* Adiciona um espaçamento interno ao rodapé, ajuste conforme necessário */
   display: grid;
 }
 
@@ -3147,6 +3160,18 @@ Version: 1.0
   font-weight: 700;
   line-height: normal;
   text-align: center;
+}
+
+@media screen and (min-width: 1920px) {
+  .offcanvas-carrinho
+    .offcanvas-carrinho-body
+    .cart__container
+    .cart
+    .cart__wrapper
+    .cart__product-list {
+    height: calc(100vh - 450px);
+    max-height: 450px; /* Define a altura máxima de rolagem */
+  }
 }
 
 /*=========================================================================== */

@@ -20,7 +20,9 @@ async function updateNumberBadgeCart() {
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       const response = JSON.parse(xhr.responseText);
-      badgeElement.textContent = `${response.items.length}`;
+      for (let i = 0; i < badgeElement.length; i++) {
+        badgeElement[i].textContent = `${response.items.length}`;
+      }
     }
   };
   xhr.send();
