@@ -1172,7 +1172,7 @@ Version: 1.0
 
 .offers-outlet-banners {
   display: grid;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
@@ -1184,16 +1184,55 @@ Version: 1.0
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.offers-outlet-banners-two img {
+.offers-outlet-banners-two {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.box-banner-image-baixe-app {
+  width: 350px;
+  height: auto;
+}
+
+.box-banner-image-baixe-app img {
   display: block;
   width: 100%;
   height: auto;
 }
 
+.box-banner-image-app {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 80px;
+  gap: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.25) inset,
+    5px 5px 30px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+}
+
+.box-banner-image-app-android img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+.box-banner-image-app-apple img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .offers-outlet-banners {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 }
