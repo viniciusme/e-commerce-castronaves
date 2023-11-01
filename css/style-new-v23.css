@@ -1191,7 +1191,7 @@ Version: 1.0
 }
 
 .box-banner-image-baixe-app {
-  width: 350px;
+  width: 300px;
   height: auto;
 }
 
@@ -1202,14 +1202,12 @@ Version: 1.0
 }
 
 .box-banner-image-app {
-  position: relative;
-  top: -25px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 350px;
-  height: 80px;
-  gap: 10px;
+  margin-top: -25px;
+  width: 330px;
+  height: 70px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.25) inset,
@@ -1234,6 +1232,27 @@ Version: 1.0
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .box-banner-image-baixe-app {
+    width: 350px;
+    height: auto;
+  }
+
+  .box-banner-image-app {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -25px;
+    width: 350px;
+    height: 80px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.25) inset,
+      5px 5px 30px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
   }
 }
 
@@ -2214,16 +2233,28 @@ Version: 1.0
   gap: 20px;
 }
 
-.purchase-difference-card-step-one img,
-.purchase-difference-card-step-two img,
-.purchase-difference-card-step-three img {
+.purchase-difference-card-step-one img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.purchase-difference-card-step-two img {
   width: 110px;
   height: auto;
+  margin-bottom: 10px;
+}
+
+.purchase-difference-card-step-three img {
+  width: 85px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .purchase-difference-card-step-four img {
-  width: 80px;
+  width: 110px;
   height: auto;
+  margin-bottom: 10px;
 }
 
 .purchase-difference-card-step-one-subtitle,
@@ -2261,16 +2292,28 @@ Version: 1.0
     text-align: center;
   }
 
-  .purchase-difference-card-step-one img,
-  .purchase-difference-card-step-two img,
-  .purchase-difference-card-step-three img {
-    width: 90px;
+  .purchase-difference-card-step-one img {
+    width: 100px;
     height: auto;
+    margin-bottom: 20px;
+  }
+
+  .purchase-difference-card-step-two img {
+    width: 110px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .purchase-difference-card-step-three img {
+    width: 85px;
+    height: auto;
+    margin-bottom: 10px;
   }
 
   .purchase-difference-card-step-four img {
-    width: 60px;
+    width: 110px;
     height: auto;
+    margin-bottom: 10px;
   }
 
   .purchase-difference-card-step-one-paragraph,
@@ -2287,16 +2330,28 @@ Version: 1.0
     gap: 20px;
   }
 
-  .purchase-difference-card-step-one img,
-  .purchase-difference-card-step-two img,
-  .purchase-difference-card-step-three img {
+  .purchase-difference-card-step-one img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .purchase-difference-card-step-two img {
     width: 110px;
     height: auto;
+    margin-bottom: 10px;
+  }
+
+  .purchase-difference-card-step-three img {
+    width: 85px;
+    height: auto;
+    margin-bottom: 10px;
   }
 
   .purchase-difference-card-step-four img {
-    width: 80px;
+    width: 110px;
     height: auto;
+    margin-bottom: 10px;
   }
 
   .purchase-difference-card-step-one-paragraph,

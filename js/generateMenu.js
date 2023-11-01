@@ -1260,7 +1260,7 @@ const categorys = [
 ];
 
 const categorysMenu = document.getElementById('categorys');
-const menuMobileContainer = document.getElementById('menu-mobile');
+const menuMobileContainer = document.getElementById('accordionFlush');
 const subCategorysMenu = document.getElementById('sub-categorys');
 
 categorys.forEach((category) => {
@@ -1424,10 +1424,6 @@ categorys.forEach((category) => {
   });
 
   // MOBILE
-  const accordionDiv = document.createElement('div');
-  accordionDiv.className = 'accordion accordion-flush';
-  accordionDiv.id = `af`;
-
   const accordionItemDiv = document.createElement('div');
   accordionItemDiv.className = 'accordion-item';
 
@@ -1455,7 +1451,7 @@ categorys.forEach((category) => {
   const accordionCollapse = document.createElement('div');
   accordionCollapse.id = `fC-${formatTitle(categoryTitle)}`;
   accordionCollapse.className = 'accordion-collapse collapse';
-  accordionCollapse.setAttribute('data-bs-parent', `#af`);
+  accordionCollapse.setAttribute('data-bs-parent', `#accordionFlush`);
 
   const accordionBody = document.createElement('div');
   accordionBody.className = 'accordion-body';
@@ -1485,11 +1481,10 @@ categorys.forEach((category) => {
   accordionItemDiv.appendChild(accordionHeader);
   accordionItemDiv.appendChild(accordionCollapse);
   accordionCollapse.appendChild(accordionBody);
-  accordionDiv.appendChild(accordionItemDiv);
   showAll.appendChild(showAllParagraph);
   accordionBody.appendChild(showAll);
 
-  menuMobileContainer.appendChild(accordionDiv);
+  menuMobileContainer.appendChild(accordionItemDiv);
 });
 
 function formatTitle(str) {
