@@ -159,7 +159,7 @@ Version: 1.0
   padding: 20px;
   margin: 0px 0 0 0;
   left: calc(100vw - 95%);
-  top: -8px;
+  top: 120px;
   border-radius: 8px;
   box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.4);
   list-style-type: none;
@@ -169,17 +169,19 @@ Version: 1.0
 
 @media screen and (min-width: 576px) {
   .ui-autocomplete {
+    width: 500px;
     max-width: 500px;
     left: calc(100vw - 94%);
-    top: -8px;
+    top: 120px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ui-autocomplete {
+    width: 700px;
     max-width: 700px;
     left: calc(100vw - 96%);
-    top: -8px;
+    top: 120px;
   }
 }
 
@@ -1137,7 +1139,7 @@ Version: 1.0
 }
 
 /*=========================================================================== */
-/* Offers Amd Outlet
+/* Offers And Outlet
 ============================================================================= */
 
 .offers-outlet {
