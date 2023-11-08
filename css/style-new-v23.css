@@ -1382,10 +1382,20 @@ Version: 1.0
 }
 
 .banner-ads-category-card-it-phone-link {
+  text-decoration: none;
   width: 100%;
 }
 
-.banner-ads-category-card-it-phone-link a {
+.banner-ads-category-card-it-phone-link a,
+.banner-ads-category-card-eletronic-security-link a,
+.banner-ads-category-card-maintenance-link a,
+.banner-ads-category-card-waste-collection-link a,
+.banner-ads-category-card-cleaning-link a,
+.banner-ads-category-card-sanitary-hygiene-link a,
+.banner-ads-category-card-food-and-disposables-link a,
+.banner-ads-category-card-ppe-and-signage-link a,
+.banner-ads-category-card-office-and-stationery-link a,
+.banner-ads-category-card-organization-link a {
   color: #4f4f4f;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
@@ -2099,6 +2109,8 @@ Version: 1.0
 }
 
 .banner-ads-category-card-and-banner-one img {
+  width: 325px;
+  height: auto;
   max-width: 325px;
   max-height: 173px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
@@ -2175,6 +2187,8 @@ Version: 1.0
   }
 
   .banner-ads-category-card-and-banner-one img {
+    width: 620px;
+    height: auto;
     max-width: 620px;
     max-height: 334px;
     box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
@@ -2190,6 +2204,8 @@ Version: 1.0
   }
 
   .banner-ads-category-card-and-banner-one img {
+    width: 780px;
+    height: auto;
     max-width: 780px;
     max-height: 420px;
     box-shadow: -10px -10px 20px 0px rgba(190, 190, 190, 0.25),
